@@ -1,0 +1,3 @@
+1. servo having large angle when load new fw
+2. servo jittered when using transmitor
+3. VESC current not working RPM mode
