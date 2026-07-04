@@ -123,27 +123,67 @@ volatile uint32_t can_state;
 volatile uint32_t can_err;
 volatile uint32_t can_mailbox;
 
+typedef enum {
+	CAN_PACKET_SET_DUTY = 0,
+	CAN_PACKET_SET_CURRENT,
+	CAN_PACKET_SET_CURRENT_BRAKE,
+	CAN_PACKET_SET_RPM,
+	CAN_PACKET_SET_POS,
+	CAN_PACKET_SET_CURRENT_REL = 10,
+	CAN_PACKET_SET_CURRENT_BRAKE_REL,
+	CAN_PACKET_SET_CURRENT_HANDBRAKE,
+	CAN_PACKET_SET_CURRENT_HANDBRAKE_REL,
+	CAN_PACKET_MAKE_ENUM_32_BITS = 0xFFFFFFFF,
+} CAN_PACKET_ID;
+
+static uint32_t vesc_id = 1;
+
+void static buffer_append_int32(uint8_t* buffer, int32_t value) {
+	buffer[0] = (value >> 24) & 0xFF;
+	buffer[1] = (value >> 16) & 0xFF;
+	buffer[2] = (value >> 8) & 0xFF;
+	buffer[3] = value & 0xFF;
+}
+
+void VESC_SetCurrent_Brake(float current_A) {
+	CAN_TxHeaderTypeDef txHeader;
+	uint8_t data[4];
+	uint32_t txMailbox;
+	int32_t current_mA = (int32_t)(current_A * 1000.0f);
+
+	txHeader.IDE = CAN_ID_EXT;
+	txHeader.ExtId = (CAN_PACKET_SET_CURRENT_BRAKE << 8) | vesc_id;
+	txHeader.RTR = CAN_RTR_DATA;
+	txHeader.DLC = 4;
+	txHeader.TransmitGlobalTime = DISABLE;
+
+
+	// Store in buffer array
+	buffer_append_int32(data, current_mA);
+
+	can_free = HAL_CAN_GetTxMailboxesFreeLevel(&hcan1);
+
+	HAL_CAN_AddTxMessage(&hcan1, &txHeader, data, &txMailbox);
+	can_mailbox = txMailbox;
+	can_state = HAL_CAN_GetState(&hcan1);
+	can_err = HAL_CAN_GetError(&hcan1);
+	return;
+}
 void VESC_SetCurrent(float current_A)
 {
     CAN_TxHeaderTypeDef txHeader;
     uint8_t data[4];
     uint32_t txMailbox;
-
     int32_t current_mA = (int32_t)(current_A * 1000.0f);
 
-    uint8_t vesc_id = 1;
-    uint8_t cmd_set_current = 1; // COMM_SET_CURRENT
-
     txHeader.IDE = CAN_ID_EXT;
-    txHeader.ExtId = (cmd_set_current << 8) | vesc_id;
+    txHeader.ExtId = (CAN_PACKET_SET_CURRENT << 8) | vesc_id;
     txHeader.RTR = CAN_RTR_DATA;
     txHeader.DLC = 4;
     txHeader.TransmitGlobalTime = DISABLE;
 
-    data[0] = (current_mA >> 24) & 0xFF;
-    data[1] = (current_mA >> 16) & 0xFF;
-    data[2] = (current_mA >> 8) & 0xFF;
-    data[3] = current_mA & 0xFF;
+    // Store in buffer array
+    buffer_append_int32(data, current_mA);
 
     can_free = HAL_CAN_GetTxMailboxesFreeLevel(&hcan1);
 
@@ -160,15 +200,13 @@ void VESC_SetRPM(int32_t erpm)
     uint32_t txMailbox;
 
     txHeader.IDE = CAN_ID_EXT;
-    txHeader.ExtId = (3 << 8) | 1;   // SET_RPM, VESC ID 1
+    txHeader.ExtId = (CAN_PACKET_SET_RPM << 8) | vesc_id;
     txHeader.RTR = CAN_RTR_DATA;
     txHeader.DLC = 4;
     txHeader.TransmitGlobalTime = DISABLE;
 
-    data[0] = (erpm >> 24) & 0xFF;
-    data[1] = (erpm >> 16) & 0xFF;
-    data[2] = (erpm >> 8) & 0xFF;
-    data[3] = erpm & 0xFF;
+    // Store in buffer array
+    buffer_append_int32(data, erpm);
 
     HAL_CAN_AddTxMessage(&hcan1, &txHeader, data, &txMailbox);
 }
@@ -237,12 +275,13 @@ int main(void)
 
   HAL_CAN_ConfigFilter(&hcan1, &filter);
   HAL_CAN_Start(&hcan1);
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
 //  uint32_t free = HAL_CAN_GetTxMailboxesFreeLevel(&hcan1);
 //  HAL_StatusTypeDef st = HAL_CAN_AddTxMessage(&hcan1, &txHeader, data, &txMailbox);
 //  uint32_t state = HAL_CAN_GetState(&hcan1);
 //  uint32_t err = HAL_CAN_GetError(&hcan1);
 
-  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -255,9 +294,13 @@ int main(void)
   while (1)
   {
 
-	 // Control Motor
-	  VESC_SetCurrent(1.0f);
-	  HAL_Delay(50);
+	  // Control Motor
+
+	   VESC_SetRPM(1000);
+		 HAL_Delay(50);
+
+//	  HAL_Delay(10);
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -376,9 +419,9 @@ static void MX_TIM2_Init(void)
 
   /* USER CODE END TIM2_Init 1 */
   htim2.Instance = TIM2;
-  htim2.Init.Prescaler = 179;
+  htim2.Init.Prescaler = 89;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 2999;
+  htim2.Init.Period = 3002;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
