@@ -97,11 +97,38 @@ typedef struct  {
 }  __attribute__((packed)) ControlCmd;
 
 typedef struct {
+    uint8_t header1;              // 0xCD
+    uint8_t header2;              // 0xEF
+
+    uint16_t telemetry_seq;       // STM32 packet counter
+    uint16_t last_cmd_seq;        // Jetson packet counter, first test can be 0
+
+    uint32_t stm32_timestamp_ms;  // HAL_GetTick()
+
+    int32_t erpm;                 // VESC Status 1 actual ERPM
+    int16_t motor_current_x10;    // A * 10
+    int16_t duty_x1000;           // duty * 1000
+
+    uint16_t crc;                 // CRC16, first test can be 0
+} __attribute__((packed)) Feedback;
+
+typedef struct {
     uint16_t throttle;
     uint16_t steering;
     uint8_t valid;
     uint32_t last_update_ms;
 } ControlInput;
+
+// VESC feedback
+#define CAN_PACKET_STATUS_1 (9U)
+typedef struct {
+    uint8_t controller_id;
+    int32_t erpm;
+    int16_t current_x10;
+    int16_t duty_x1000;
+    uint32_t last_rx_ms;
+    uint8_t valid;
+} vesc_status_msg_1_t;
 
 /* Global Variables */
 #define BUFFER_SIZE 50U
@@ -123,6 +150,7 @@ volatile uint32_t can_state;
 volatile uint32_t can_err;
 volatile uint32_t can_mailbox;
 
+// All Types of VESC Feedback
 typedef enum {
 	CAN_PACKET_SET_DUTY = 0,
 	CAN_PACKET_SET_CURRENT,
@@ -137,6 +165,11 @@ typedef enum {
 } CAN_PACKET_ID;
 
 static uint32_t vesc_id = 1;
+volatile vesc_status_msg_1_t g_vesc_status1;
+volatile uint32_t g_can_rx_count = 0;
+volatile uint32_t g_last_ext_id = 0;
+static uint32_t g_tx_fail = 0;
+static uint32_t g_tx_ok = 0;
 
 void static buffer_append_int32(uint8_t* buffer, int32_t value) {
 	buffer[0] = (value >> 24) & 0xFF;
@@ -198,6 +231,7 @@ void VESC_SetRPM(int32_t erpm)
     CAN_TxHeaderTypeDef txHeader;
     uint8_t data[4];
     uint32_t txMailbox;
+    HAL_StatusTypeDef ret;
 
     txHeader.IDE = CAN_ID_EXT;
     txHeader.ExtId = (CAN_PACKET_SET_RPM << 8) | vesc_id;
@@ -208,7 +242,35 @@ void VESC_SetRPM(int32_t erpm)
     // Store in buffer array
     buffer_append_int32(data, erpm);
 
-    HAL_CAN_AddTxMessage(&hcan1, &txHeader, data, &txMailbox);
+    ret = HAL_CAN_AddTxMessage(&hcan1, &txHeader, data, &txMailbox);
+    if(ret == HAL_OK){
+    	//ok
+    	g_tx_ok++;
+    }
+    else {
+    	g_tx_fail++;
+    }
+
+}
+
+void VESC_Feedback_PackAndSend(void){
+	Feedback pkt;
+	if(g_vesc_status1.valid == CTRL_OK){
+		pkt.header1 = 0xCD;
+		pkt.header2 = 0xEF;
+		pkt.telemetry_seq = 0;
+		pkt.last_cmd_seq = 0;
+
+		pkt.stm32_timestamp_ms = g_vesc_status1.last_rx_ms;
+		pkt.erpm = g_vesc_status1.erpm;
+		pkt.motor_current_x10 = g_vesc_status1.current_x10;
+		pkt.duty_x1000 = g_vesc_status1.duty_x1000;
+		pkt.crc = 0;
+		// send using uart1
+		HAL_UART_Transmit(&huart1, (uint8_t *)&pkt, sizeof(pkt), 10);
+	}
+	return;
+
 }
 /* USER CODE END 0 */
 
@@ -234,6 +296,8 @@ int main(void)
    // Final Execute value
    uint16_t throttle_execute = 0U;
    uint16_t steering_execute = CENTER;
+
+   static uint32_t last_feedback_ms = 0;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -273,41 +337,134 @@ int main(void)
   filter.FilterActivation = ENABLE;
   filter.SlaveStartFilterBank = 14;
 
-  HAL_CAN_ConfigFilter(&hcan1, &filter);
-  HAL_CAN_Start(&hcan1);
+  // CAN (motor)
+  HAL_CAN_ResetError(&hcan1);
+  if (HAL_CAN_ConfigFilter(&hcan1, &filter) != HAL_OK) {
+      Error_Handler();
+  }
+
+  if (HAL_CAN_Start(&hcan1) != HAL_OK) {
+      Error_Handler();
+  }
+
+  (void*)HAL_CAN_ActivateNotification(&hcan1,CAN_IT_RX_FIFO0_MSG_PENDING);
+//
+//  g_can_ier = hcan1.Instance->IER;
+//  g_nvic_enabled = NVIC_GetEnableIRQ(CAN1_RX0_IRQn);
+
+
+//  NVIC_SetPendingIRQ(CAN1_RX0_IRQn);
+  HAL_Delay(100);
+  // PWM (servo)
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
-//  uint32_t free = HAL_CAN_GetTxMailboxesFreeLevel(&hcan1);
-//  HAL_StatusTypeDef st = HAL_CAN_AddTxMessage(&hcan1, &txHeader, data, &txMailbox);
-//  uint32_t state = HAL_CAN_GetState(&hcan1);
-//  uint32_t err = HAL_CAN_GetError(&hcan1);
+
 
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-
+  // UART (Jetson, Transmitter)
   HAL_UART_Receive_DMA(&huart6, sbus_buffer_ready, BUFFER_SIZE);
   HAL_UART_Receive_DMA(&huart1, jetson_buffer_ready, JETSON_BUFFER_SIZE);
-  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 1520);
+//  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 1520);
+  VESC_SetRPM(0);
   HAL_Delay(1000);
+
   while (1)
   {
 
-	  // Control Motor
 
-	   VESC_SetRPM(1000);
-		 HAL_Delay(50);
 
-//	  HAL_Delay(10);
+	  uint32_t now = HAL_GetTick();
 
+
+	  // Set RPM to 1000 every 10 ms
+	  VESC_SetRPM(1000);
+
+
+	  // Receeive ERPM feedback every 20ms
+	  if ((uint32_t)(now - last_feedback_ms) >= 20U){
+		  last_feedback_ms = now;
+		  VESC_Feedback_PackAndSend();
+	  }
+
+
+	  HAL_Delay(10);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
+static int32_t VESC_Get_i32_be(uint8_t *data, int *idx)
+{
+    int32_t value =
+        ((int32_t)data[*idx] << 24) |
+        ((int32_t)data[*idx + 1] << 16) |
+        ((int32_t)data[*idx + 2] << 8) |
+        ((int32_t)data[*idx + 3]);
 
+    *idx += 4;
+    return value;
+}
+
+static int16_t VESC_Get_i16_be(uint8_t *data, int *idx)
+{
+    int16_t value =
+        ((int16_t)data[*idx] << 8) |
+        ((int16_t)data[*idx + 1]);
+
+    *idx += 2;
+    return value;
+}
+
+
+void VESC_DecodeStatus1(uint8_t controller_id, uint8_t *data)
+{
+    int idx = 0;
+
+    int32_t erpm = VESC_Get_i32_be(data, &idx);
+    int16_t current_x10 = VESC_Get_i16_be(data, &idx);
+    int16_t duty_x1000 = VESC_Get_i16_be(data, &idx);
+
+    g_vesc_status1.controller_id = controller_id;
+    g_vesc_status1.erpm = erpm;
+    g_vesc_status1.current_x10 = current_x10;
+    g_vesc_status1.duty_x1000 = duty_x1000;
+    g_vesc_status1.last_rx_ms = HAL_GetTick();
+    g_vesc_status1.valid = CTRL_OK;
+}
+
+void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
+{
+    CAN_RxHeaderTypeDef rxHeader;
+    uint8_t rxData[8];
+
+    if (hcan->Instance != CAN1) {
+        return;
+    }
+
+    // Get Feedback
+    if (HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &rxHeader, rxData) != HAL_OK) {
+        return;
+    }
+
+    g_can_rx_count++;
+    g_last_ext_id = rxHeader.ExtId;
+
+    if (rxHeader.IDE != CAN_ID_EXT) {
+        return;
+    }
+
+    uint8_t cmd = (rxHeader.ExtId >> 8) & 0xFF;
+    uint8_t id  = rxHeader.ExtId & 0xFF;
+
+    // Store Feedback data
+    if (cmd == CAN_PACKET_STATUS_1 && id == vesc_id && rxHeader.DLC == 8) {
+        VESC_DecodeStatus1(id, rxData);
+    }
+}
 /**
   * @brief System Clock Configuration
   * @retval None
@@ -380,15 +537,22 @@ static void MX_CAN1_Init(void)
   hcan1.Instance = CAN1;
   hcan1.Init.Prescaler = 5;
   hcan1.Init.Mode = CAN_MODE_NORMAL;
-  hcan1.Init.SyncJumpWidth = CAN_SJW_1TQ;
-  hcan1.Init.TimeSeg1 = CAN_BS1_15TQ;
-  hcan1.Init.TimeSeg2 = CAN_BS2_2TQ;
+// LOOPBACK for Debug Usage
+//  hcan1.Init.Mode = CAN_MODE_LOOPBACK;
+
+  hcan1.Init.SyncJumpWidth = CAN_SJW_4TQ;
+  hcan1.Init.TimeSeg1 = CAN_BS1_13TQ;
+  hcan1.Init.TimeSeg2 = CAN_BS2_4TQ;
+
+
   hcan1.Init.TimeTriggeredMode = DISABLE;
   hcan1.Init.AutoBusOff = DISABLE;
   hcan1.Init.AutoWakeUp = DISABLE;
   hcan1.Init.AutoRetransmission = DISABLE;
   hcan1.Init.ReceiveFifoLocked = DISABLE;
   hcan1.Init.TransmitFifoPriority = DISABLE;
+
+
   if (HAL_CAN_Init(&hcan1) != HAL_OK)
   {
     Error_Handler();
