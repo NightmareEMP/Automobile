@@ -31,15 +31,15 @@ int main(){
     // Create msg 
     ControlCmd cmd{};
     std::vector<int16_t> dir(4);
-    dir[1] = 1720;
     dir[0] = 1520;
+    dir[1] = 1720;
     dir[2] = 1520;
     dir[3] = 1320;
     uint32_t idx = 0;
     cmd.header1 = 0xAB;
     cmd.header2 = 0x55;
     cmd.steering = 1700;
-    cmd.throttle = 1420;
+    cmd.throttle = 0;
     cmd.mode = 1;
     cmd.seq = 1;
     cmd.crc = 0;
@@ -65,32 +65,32 @@ int main(){
             }
             total_write += n;
         }
-        sleep(1);
+        // sleep(1);
         // std::cout<<"Sent Done\n";
-        // usleep(20000); // 20 ms
-        // size_t total_read = 0;
-        // while (total_read < 4) {
-        //     int n = Uart.readBytes(rx_buf + total_read, 4 - total_read);
-        //     if (n < 0) {
-        //         std::cerr << "read failed\n";
-        //         return 1;
-        //     }
-        //     if (n == 0) {
-        //         continue;
-        //     }
-        //     total_read += n;
-        // }
+        usleep(20000); // 20 ms
+        size_t total_read = 0;
+        while (total_read < 4) {
+            int n = Uart.readBytes(rx_buf + total_read, 4 - total_read);
+            if (n < 0) {
+                std::cerr << "read failed\n";
+                return 1;
+            }
+            if (n == 0) {
+                continue;
+            }
+            total_read += n;
+        }
     
-        // if (total_read == 4) {
-        //     uint16_t steering = 0;
-        //     uint16_t throttle = 0;
-        //     memcpy(&throttle, &rx_buf[0], 2);
-        //     memcpy(&steering, &rx_buf[2], 2);
+        if (total_read == 4) {
+            uint16_t steering = 0;
+            int16_t throttle = 0;
+            memcpy(&throttle, &rx_buf[0], 2);
+            memcpy(&steering, &rx_buf[2], 2);
 
-        //     printf("steering = %u, throttle = %u\n", steering, throttle);
-        // } else {
-        //     printf("incomplete packet\n");
-        // }
+            printf("steering = %u, throttle = %d\n", steering, throttle);
+        } else {
+            printf("incomplete packet\n");
+        }
     }
 
 

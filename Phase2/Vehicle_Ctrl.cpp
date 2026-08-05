@@ -31,23 +31,7 @@ int main(){
         std::cerr << "Failed to open UART\n";
         return 1;
     }
-    // Create msg 
-    ControlCmd cmd{};
-    std::vector<int16_t> dir(4);
-    dir[1] = 1720;
-    dir[0] = 1520;
-    dir[2] = 1520;
-    dir[3] = 1320;
-    uint32_t idx = 0;
-    cmd.header1 = 0xAB;
-    cmd.header2 = 0x55;
-    cmd.steering = 1700;
-    cmd.throttle = 1420;
-    cmd.mode = 1;
-    cmd.seq = 1;
-    cmd.crc = 0;
-
-    uint8_t tx_buf[CONTROL_CMD_PACKET_SIZE];
+    
     uint8_t rx_buf[FEEDBACK_PACKET_SIZE];
     while(1){
         // std::cout<<"Recive start\n";
