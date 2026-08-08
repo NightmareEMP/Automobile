@@ -1,0 +1,20 @@
+$ Solidworks
+# Spacer 3x6: https://grabcad.com/library/cylindrical-spacers-pass-through-not-threaded-3-2-x-6-mm-1
+# STM32: https://grabcad.com/library/nucleo-board-1
+# xt60e-f: https://grabcad.com/library/xt60e-f-from-amass-1
+# Jetson: https://grabcad.com/library/jetson-orin-nano-super-dev-kit-1
+# Switch: https://grabcad.com/library/toggle-switch-41
+# Antenna:https://grabcad.com/library/2dbi-rubber-duck-antenna-sma-shapr3d-source-included-1
+
+$ VESC Motor CAN Bus Protocol
+https://github.com/vedderb/bldc/blob/master/documentation/comm_can.md
+https://vesc-project.com/sites/default/files/imce/u15301/VESC6_CAN_CommandsTelemetry.pdf
+
+
+$ CANBUS sample point explanation
+https://hackmd.io/FArNADHMSgq1rSV8ZFvqYA
+https://community.st.com/stm32-mcus-60/can-bxcan-bit-time-configuration-on-stm32-mcus-135466
+
+$ SBUS Protocol
+https://futabausa.com/futaba-rc-tech/s-bus-system/
+https://sigrok.org/wiki/Protocol_decoder:Sbus_futaba
