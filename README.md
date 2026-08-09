@@ -36,7 +36,7 @@ Brief component list here.
 
 Brief software overview here.
 
-For more detail, see [Software Architecture](./docs/software-architecture.md).
+For more detail, see [Software Architecture](./docs/Software/REAME.md).
 
 ## 6. Control and Compute Unit Separation
 
@@ -65,7 +65,7 @@ Combined steering and throttle control, feedback, modes, timeouts, and failsafe 
 
 ### Future Phases
 
-Planned work includes Jetson integration, localization, planning, and autonomous driving.
+Planned work includes device driver implementation, Jetson integration, localization, planning, and autonomous driving.
 
 ## 9. Repository Structure
 

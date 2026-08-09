@@ -4,9 +4,9 @@
 
 
 ## Test 1:
-- For STM32 settings and explanation. See
+- For STM32 settings and explanation. See [STM config](../docs/STM32/README.md)
 - Step:
-1. Replace main.c with servotest.c 
+1. Replace main.c with servotest.c (STM32)
 2. Turn off power switch on your servor (Important: This step is important. If stm32 is setting PWM while loading firmware or rest stm32, the cut off PWM might result some unexpected large angle which might damage your chassis; otherwise, test before servo is being place on the chassis)
 3. Turn on switch and run STM32
 4. Should see servo oscillates between left and right
