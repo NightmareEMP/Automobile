@@ -53,7 +53,7 @@ int main(){
             Feedback *pkt;
             pkt = (Feedback*)rx_buf;
             if (pkt->header1 == 0xCD && pkt->header2 == 0xEF) {
-                printf("erpm = %d, fail = %d\n", pkt->erpm, pkt->stm32_timestamp_ms);
+                printf("erpm = %d, last_rx_ms = %d\n", pkt->erpm, pkt->stm32_timestamp_ms);
             }
         } else {
             printf("incomplete packet\n");

@@ -65,32 +65,33 @@ int main(){
             }
             total_write += n;
         }
-        // sleep(1);
+        sleep(1);
         // std::cout<<"Sent Done\n";
-        usleep(20000); // 20 ms
-        size_t total_read = 0;
-        while (total_read < 4) {
-            int n = Uart.readBytes(rx_buf + total_read, 4 - total_read);
-            if (n < 0) {
-                std::cerr << "read failed\n";
-                return 1;
-            }
-            if (n == 0) {
-                continue;
-            }
-            total_read += n;
-        }
+        // RX use for Debug, currently cannot run with TX at same time 
+        // usleep(20000); // 20 ms
+        // size_t total_read = 0;
+        // while (total_read < 4) {
+        //     int n = Uart.readBytes(rx_buf + total_read, 4 - total_read);
+        //     if (n < 0) {
+        //         std::cerr << "read failed\n";
+        //         return 1;
+        //     }
+        //     if (n == 0) {
+        //         continue;
+        //     }
+        //     total_read += n;
+        // }
     
-        if (total_read == 4) {
-            uint16_t steering = 0;
-            int16_t throttle = 0;
-            memcpy(&throttle, &rx_buf[0], 2);
-            memcpy(&steering, &rx_buf[2], 2);
+        // if (total_read == 4) {
+        //     uint16_t steering = 0;
+        //     int16_t throttle = 0;
+        //     memcpy(&throttle, &rx_buf[0], 2);
+        //     memcpy(&steering, &rx_buf[2], 2);
 
-            printf("steering = %u, throttle = %d\n", steering, throttle);
-        } else {
-            printf("incomplete packet\n");
-        }
+        //     printf("steering = %u, throttle = %d\n", steering, throttle);
+        // } else {
+        //     printf("incomplete packet\n");
+        // }
     }
 
 

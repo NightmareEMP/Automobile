@@ -244,14 +244,6 @@ void ManualControl(ControlInput *Data){
 		throttle_sbus = ((local_copy[(header_index + 2) % BUFFER_SIZE] >> 3 |
 					  local_copy[(header_index + 3) % BUFFER_SIZE] << 5) & 0x07FF);
 
-		// low pass filter  (TODO) : currently jittering
-		static uint16_t steering_filtered = CENTER;
-
-		steering_filtered =
-		    (steering_filtered * 7 + Data->steering * 1) / 8;
-
-		Data->steering = steering_filtered;
-
 		// Fill in Data
 		Subs2PWM(&throttle_sbus, &steering_sbus, &(Data->throttle), &(Data->steering));
 		Data->valid = CTRL_OK;
@@ -374,13 +366,13 @@ int main(void)
 	  }
 
 	  // Control Servo
-//	  uint8_t msg[4];
-//	  memcpy(msg, (uint8_t*)(&throttle_execute), 2);
-//	  memcpy(msg+2, (uint8_t*)(&steering_execute), 2);
-//	  HAL_UART_Transmit(&huart1, msg, 4, 1);
-	  if(steering_execute > CENTER) HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
-	  else HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
-	  // Control Motor
+	  uint8_t msg[4];
+	  memcpy(msg, (uint8_t*)(&throttle_execute), 2);
+	  memcpy(msg+2, (uint8_t*)(&steering_execute), 2);
+	  HAL_UART_Transmit(&huart1, msg, 4, 1);
+	  // if(steering_execute > CENTER) HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+	  // else HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+	  // Control Servo
 		__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, steering_execute);
 
 
@@ -389,12 +381,6 @@ int main(void)
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
-}
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-{
-    if (GPIO_Pin == B1_Pin) {
-        manual_flag = 0;
-    }
 }
 /**
   * @brief System Clock Configuration
