@@ -10,7 +10,8 @@
 2. Turn off power switch on your servor (Important: This step is important. If stm32 is setting PWM while loading firmware or rest stm32, the cut off PWM might result some unexpected large angle which might damage your chassis; otherwise, test before servo is being place on the chassis)
 3. Turn on switch and run STM32
 4. Should see servo oscillates between left and right
-<video src="../Video/VehicleTest/ServoTest.mp4" controls width="600"></video>
+
+[![Servo Test](../Video/VehicleTest/ThumbNail/ServoTest.png)](./Video/VehicleTest/ServoTest.mp4)
 ## Test 2:
 - Step:
 1. Replace `main.c` with `servo_systemctrl.c`.
@@ -25,8 +26,7 @@
 
 5. Should see servo oscillates between left and right, and you cound take over the control when you use transmitter
 6. Possible Issue: Servo jitter when human control due to high frequency changed value. This is fixed in Phase 3
-<video src="../Video/VehicleTest/ServoInterrupt.mp4" controls width="600"></video>
-
+[![Servo Interrupt](../Video/VehicleTest/ThumbNail/ServoInterrupt.png)](../Video/VehicleTest/ServoInterrupt.mp4)
 
 
 

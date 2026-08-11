@@ -14,4 +14,4 @@
    ./vesc_test 
    ```
 5. Should see the wheel spinning and jetson receive feedback rpm around 2000 and last_rx_ms with 20ms time gap.
-<video src="../Video/VehicleTest/MotorTest.mp4" controls width="600"></video>
+[![Motor Test](../Video/VehicleTest/ThumbNail/MotorTest.png)](../Video/VehicleTest/MotorTest.mp4)
