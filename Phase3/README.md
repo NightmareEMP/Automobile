@@ -17,3 +17,4 @@
    ./main 
    ```
 5. Should see the wheel spinning while servo also oscillate between right and left. At the same time you can read the feedback from the jetson. Also, you could use transmitor to interrupt current jetson and give control back to jetson by pressing the blue button
+<video src="../Video/VehicleTest/FullSysTest.mp4" controls width="600"></video>
