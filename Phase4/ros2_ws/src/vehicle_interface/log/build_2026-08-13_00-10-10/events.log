@@ -1,0 +1,159 @@
+[0.000000] (-) TimerEvent: {}
+[0.000563] (vehicle_interface) JobQueued: {'identifier': 'vehicle_interface', 'dependencies': OrderedDict()}
+[0.001076] (vehicle_interface) JobStarted: {'identifier': 'vehicle_interface'}
+[0.013574] (vehicle_interface) JobProgress: {'identifier': 'vehicle_interface', 'progress': 'cmake'}
+[0.014824] (vehicle_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface', '-DCMAKE_INSTALL_PREFIX=/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface'], 'cwd': '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wowjw'), ('SSH_CLIENT', '192.168.0.161 52237 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/wowjw'), ('OLDPWD', '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.132.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ee1f2b87-3114-4804-aebf-cfe1543a264a.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\]\\[\\e[32m\\]\\u@\\h\\[\\e[m\\]:\\[\\e[34m\\]\\w\\[\\e[33m\\]$(parse_git_branch)\\[\\e[m\\]$ \\[\x1b]633;B\x07\\]'), ('VSCODE_GIT_ASKPASS_NODE', '/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wowjw'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/wowjw/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/wowjw/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/bin/remote-cli:/home/wowjw/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c1ac1f4f39.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface'), ('LC_ALL', 'en_US.UTF-8'), ('COPILOT_DEBUG_NONCE', '9fb98c99a0663c7f3298287e6ff935d5'), ('SSH_CONNECTION', '192.168.0.161 52237 192.168.0.133 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.039062] (vehicle_interface) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099502] (-) TimerEvent: {}
+[0.200084] (-) TimerEvent: {}
+[0.295598] (vehicle_interface) StdoutLine: {'line': b'-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.300177] (-) TimerEvent: {}
+[0.358661] (vehicle_interface) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.362709] (vehicle_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.372532] (vehicle_interface) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.387582] (vehicle_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.400259] (-) TimerEvent: {}
+[0.407269] (vehicle_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.458436] (vehicle_interface) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.460546] (vehicle_interface) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.500412] (-) TimerEvent: {}
+[0.600995] (-) TimerEvent: {}
+[0.623447] (vehicle_interface) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.701166] (-) TimerEvent: {}
+[0.702726] (vehicle_interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.801314] (-) TimerEvent: {}
+[0.901939] (-) TimerEvent: {}
+[1.002526] (-) TimerEvent: {}
+[1.103183] (-) TimerEvent: {}
+[1.203910] (-) TimerEvent: {}
+[1.222189] (vehicle_interface) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.304060] (-) TimerEvent: {}
+[1.404646] (-) TimerEvent: {}
+[1.505336] (-) TimerEvent: {}
+[1.606080] (-) TimerEvent: {}
+[1.706685] (-) TimerEvent: {}
+[1.807303] (-) TimerEvent: {}
+[1.897318] (vehicle_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.907380] (-) TimerEvent: {}
+[2.007821] (-) TimerEvent: {}
+[2.108442] (-) TimerEvent: {}
+[2.161935] (vehicle_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.208602] (-) TimerEvent: {}
+[2.218839] (vehicle_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.222713] (vehicle_interface) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.281363] (vehicle_interface) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.282056] (vehicle_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.282446] (vehicle_interface) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.282810] (vehicle_interface) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[2.308758] (-) TimerEvent: {}
+[2.325087] (vehicle_interface) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.408966] (-) TimerEvent: {}
+[2.420099] (vehicle_interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.500931] (vehicle_interface) StdoutLine: {'line': b'-- Generating done\n'}
+[2.509046] (-) TimerEvent: {}
+[2.521657] (vehicle_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface\n'}
+[2.544819] (vehicle_interface) CommandEnded: {'returncode': 0}
+[2.546135] (vehicle_interface) JobProgress: {'identifier': 'vehicle_interface', 'progress': 'build'}
+[2.548035] (vehicle_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface', '--', '-j6', '-l6'], 'cwd': '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wowjw'), ('SSH_CLIENT', '192.168.0.161 52237 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/wowjw'), ('OLDPWD', '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.132.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ee1f2b87-3114-4804-aebf-cfe1543a264a.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\]\\[\\e[32m\\]\\u@\\h\\[\\e[m\\]:\\[\\e[34m\\]\\w\\[\\e[33m\\]$(parse_git_branch)\\[\\e[m\\]$ \\[\x1b]633;B\x07\\]'), ('VSCODE_GIT_ASKPASS_NODE', '/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wowjw'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/wowjw/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/wowjw/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/bin/remote-cli:/home/wowjw/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c1ac1f4f39.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface'), ('LC_ALL', 'en_US.UTF-8'), ('COPILOT_DEBUG_NONCE', '9fb98c99a0663c7f3298287e6ff935d5'), ('SSH_CONNECTION', '192.168.0.161 52237 192.168.0.133 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.609486] (-) TimerEvent: {}
+[2.629593] (vehicle_interface) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.649070] (vehicle_interface) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.667861] (vehicle_interface) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_vehicle_interface\n'}
+[2.709636] (-) TimerEvent: {}
+[2.810261] (-) TimerEvent: {}
+[2.910880] (-) TimerEvent: {}
+[3.011513] (-) TimerEvent: {}
+[3.112080] (-) TimerEvent: {}
+[3.133467] (vehicle_interface) StdoutLine: {'line': b'running egg_info\n'}
+[3.134583] (vehicle_interface) StdoutLine: {'line': b'creating vehicle_interface.egg-info\n'}
+[3.134970] (vehicle_interface) StdoutLine: {'line': b'writing vehicle_interface.egg-info/PKG-INFO\n'}
+[3.135443] (vehicle_interface) StdoutLine: {'line': b'writing dependency_links to vehicle_interface.egg-info/dependency_links.txt\n'}
+[3.135758] (vehicle_interface) StdoutLine: {'line': b'writing top-level names to vehicle_interface.egg-info/top_level.txt\n'}
+[3.136173] (vehicle_interface) StdoutLine: {'line': b"writing manifest file 'vehicle_interface.egg-info/SOURCES.txt'\n"}
+[3.140773] (vehicle_interface) StdoutLine: {'line': b"reading manifest file 'vehicle_interface.egg-info/SOURCES.txt'\n"}
+[3.141582] (vehicle_interface) StdoutLine: {'line': b"writing manifest file 'vehicle_interface.egg-info/SOURCES.txt'\n"}
+[3.211342] (vehicle_interface) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_vehicle_interface_egg\n'}
+[3.212165] (-) TimerEvent: {}
+[3.266841] (vehicle_interface) StdoutLine: {'line': b'[  4%] Built target vehicle_interface__cpp\n'}
+[3.284811] (vehicle_interface) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.285293] (vehicle_interface) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.286184] (vehicle_interface) StdoutLine: {'line': b'[ 11%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.289457] (vehicle_interface) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/vehicle_interface__rosidl_generator_c.dir/rosidl_generator_c/vehicle_interface/msg/detail/vehicle_command__functions.c.o\x1b[0m\n'}
+[3.289824] (vehicle_interface) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/vehicle_interface__rosidl_generator_c.dir/rosidl_generator_c/vehicle_interface/msg/detail/vehicle_feedback__functions.c.o\x1b[0m\n'}
+[3.312346] (-) TimerEvent: {}
+[3.395068] (vehicle_interface) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library libvehicle_interface__rosidl_generator_c.so\x1b[0m\n'}
+[3.412493] (-) TimerEvent: {}
+[3.460801] (vehicle_interface) StdoutLine: {'line': b'[ 18%] Built target vehicle_interface__rosidl_generator_c\n'}
+[3.478132] (vehicle_interface) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.478802] (vehicle_interface) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.479003] (vehicle_interface) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.512655] (-) TimerEvent: {}
+[3.613266] (-) TimerEvent: {}
+[3.713909] (-) TimerEvent: {}
+[3.814554] (-) TimerEvent: {}
+[3.817578] (vehicle_interface) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/vehicle_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vehicle_interface/msg/vehicle_command__type_support.cpp.o\x1b[0m\n'}
+[3.884168] (vehicle_interface) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/vehicle_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vehicle_interface/msg/detail/vehicle_command__type_support.cpp.o\x1b[0m\n'}
+[3.889718] (vehicle_interface) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/vehicle_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vehicle_interface/msg/detail/dds_fastrtps/vehicle_command__type_support.cpp.o\x1b[0m\n'}
+[3.914742] (-) TimerEvent: {}
+[3.995967] (vehicle_interface) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/vehicle_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vehicle_interface/msg/vehicle_command__type_support.cpp.o\x1b[0m\n'}
+[4.014949] (-) TimerEvent: {}
+[4.057467] (vehicle_interface) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding C object CMakeFiles/vehicle_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vehicle_interface/msg/detail/vehicle_command__type_support.c.o\x1b[0m\n'}
+[4.063791] (vehicle_interface) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/vehicle_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vehicle_interface/msg/vehicle_feedback__type_support.cpp.o\x1b[0m\n'}
+[4.115219] (-) TimerEvent: {}
+[4.122654] (vehicle_interface) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/vehicle_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vehicle_interface/msg/detail/vehicle_command__type_support_c.cpp.o\x1b[0m\n'}
+[4.124955] (vehicle_interface) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libvehicle_interface__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.125348] (vehicle_interface) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/vehicle_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vehicle_interface/msg/detail/vehicle_feedback__type_support.c.o\x1b[0m\n'}
+[4.188396] (vehicle_interface) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking C shared library libvehicle_interface__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.200114] (vehicle_interface) StdoutLine: {'line': b'[ 48%] Built target vehicle_interface__rosidl_typesupport_c\n'}
+[4.215406] (-) TimerEvent: {}
+[4.217372] (vehicle_interface) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/vehicle_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vehicle_interface/msg/detail/vehicle_feedback__type_support_c.cpp.o\x1b[0m\n'}
+[4.247793] (vehicle_interface) StdoutLine: {'line': b'[ 51%] Built target vehicle_interface__rosidl_typesupport_introspection_c\n'}
+[4.266076] (vehicle_interface) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/vehicle_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vehicle_interface/msg/detail/dds_fastrtps/vehicle_feedback__type_support.cpp.o\x1b[0m\n'}
+[4.315606] (-) TimerEvent: {}
+[4.416364] (-) TimerEvent: {}
+[4.430853] (vehicle_interface) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/vehicle_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vehicle_interface/msg/vehicle_feedback__type_support.cpp.o\x1b[0m\n'}
+[4.516598] (-) TimerEvent: {}
+[4.617382] (-) TimerEvent: {}
+[4.675830] (vehicle_interface) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/vehicle_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vehicle_interface/msg/detail/vehicle_feedback__type_support.cpp.o\x1b[0m\n'}
+[4.717580] (-) TimerEvent: {}
+[4.818272] (-) TimerEvent: {}
+[4.880583] (vehicle_interface) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libvehicle_interface__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.918476] (-) TimerEvent: {}
+[4.971166] (vehicle_interface) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libvehicle_interface__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[5.018667] (-) TimerEvent: {}
+[5.036631] (vehicle_interface) StdoutLine: {'line': b'[ 62%] Built target vehicle_interface__rosidl_typesupport_fastrtps_c\n'}
+[5.039902] (vehicle_interface) StdoutLine: {'line': b'[ 62%] Built target vehicle_interface__rosidl_typesupport_cpp\n'}
+[5.075970] (vehicle_interface) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/vehicle_interface_node.dir/src/Uart_drv.cpp.o\x1b[0m\n'}
+[5.076466] (vehicle_interface) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/vehicle_interface_node.dir/src/Vehicle_Ctrl_Node.cpp.o\x1b[0m\n'}
+[5.076633] (vehicle_interface) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/vehicle_interface_node.dir/src/main.cpp.o\x1b[0m\n'}
+[5.092351] (vehicle_interface) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libvehicle_interface__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[5.097199] (vehicle_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/main.cpp:1:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KVehicle_Ctrl_Node.h: No such file or directory\n'}
+[5.097767] (vehicle_interface) StderrLine: {'line': b'    1 | #include \x1b[01;31m\x1b[K"Vehicle_Ctrl_Node.h"\x1b[m\x1b[K\n'}
+[5.097982] (vehicle_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.098135] (vehicle_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:1:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KVehicle_Ctrl_Node.h: No such file or directory\n'}
+[5.098285] (vehicle_interface) StderrLine: {'line': b'    1 | #include \x1b[01;31m\x1b[K"Vehicle_Ctrl_Node.h"\x1b[m\x1b[K\n'}
+[5.098475] (vehicle_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.098614] (vehicle_interface) StderrLine: {'line': b'compilation terminated.\n'}
+[5.098739] (vehicle_interface) StderrLine: {'line': b'compilation terminated.\n'}
+[5.099195] (vehicle_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/vehicle_interface_node.dir/build.make:90: CMakeFiles/vehicle_interface_node.dir/src/Vehicle_Ctrl_Node.cpp.o] Error 1\n'}
+[5.099458] (vehicle_interface) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[5.099692] (vehicle_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/vehicle_interface_node.dir/build.make:76: CMakeFiles/vehicle_interface_node.dir/src/main.cpp.o] Error 1\n'}
+[5.118834] (-) TimerEvent: {}
+[5.138086] (vehicle_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Uart_drv.cpp:6:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KUart_drv.hpp: No such file or directory\n'}
+[5.138575] (vehicle_interface) StderrLine: {'line': b'    6 | #include \x1b[01;31m\x1b[K"Uart_drv.hpp"\x1b[m\x1b[K\n'}
+[5.138747] (vehicle_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.138894] (vehicle_interface) StderrLine: {'line': b'compilation terminated.\n'}
+[5.140191] (vehicle_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/vehicle_interface_node.dir/build.make:104: CMakeFiles/vehicle_interface_node.dir/src/Uart_drv.cpp.o] Error 1\n'}
+[5.140640] (vehicle_interface) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/vehicle_interface_node.dir/all] Error 2\n'}
+[5.140814] (vehicle_interface) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[5.219005] (-) TimerEvent: {}
+[5.235983] (vehicle_interface) StdoutLine: {'line': b'[ 72%] Built target vehicle_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[5.319230] (-) TimerEvent: {}
+[5.403750] (vehicle_interface) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libvehicle_interface__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[5.419385] (-) TimerEvent: {}
+[5.476908] (vehicle_interface) StdoutLine: {'line': b'[ 74%] Built target vehicle_interface__rosidl_typesupport_introspection_cpp\n'}
+[5.479441] (vehicle_interface) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.484772] (vehicle_interface) CommandEnded: {'returncode': 2}
+[5.513023] (vehicle_interface) JobEnded: {'identifier': 'vehicle_interface', 'rc': 2}
+[5.519497] (-) TimerEvent: {}
+[5.524673] (-) EventReactorShutdown: {}

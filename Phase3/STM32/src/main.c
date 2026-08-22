@@ -366,7 +366,6 @@ int main(void)
 
 	  if( HAL_GetTick() - manual_input.last_update_ms <= SBUS_TIMEOUT_MS) {
 		  // Idle or not
-//		  if (manual_input.steering == CENTER && (manual_input.throttle >= -10 && manual_input.throttle <= 10)) {
 		  if (manual_input.steering == CENTER && manual_input.throttle == FULL_STOP_CURR) {
 			  // current do not thing if idle
 		  }
@@ -376,7 +375,7 @@ int main(void)
 		  }
 	  }
 	  else {
-		  // SBUS notworking
+		  // SBUS notworking or didn't turn on trasmitter 
 		  manual_input.valid = CTRL_NG;
 		  manual_flag = 1;
 		  manual_input.steering = CENTER;

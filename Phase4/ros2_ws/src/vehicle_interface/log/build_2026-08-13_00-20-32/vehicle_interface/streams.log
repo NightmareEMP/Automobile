@@ -1,0 +1,186 @@
+[0.016s] Invoking command in '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface -- -j6 -l6
+[0.106s] [  4%] Built target vehicle_interface__cpp
+[0.106s] [ 11%] Built target vehicle_interface__rosidl_generator_c
+[0.124s] [ 11%] Built target ament_cmake_python_copy_vehicle_interface
+[0.143s] [ 20%] Built target vehicle_interface__rosidl_typesupport_introspection_c
+[0.145s] [ 30%] Built target vehicle_interface__rosidl_typesupport_cpp
+[0.146s] [ 48%] Built target vehicle_interface__rosidl_typesupport_fastrtps_cpp
+[0.146s] [ 48%] Built target vehicle_interface__rosidl_typesupport_introspection_cpp
+[0.147s] [ 58%] Built target vehicle_interface__rosidl_typesupport_c
+[0.168s] [ 67%] Built target vehicle_interface__rosidl_typesupport_fastrtps_c
+[0.171s] [35m[1mConsolidate compiler generated dependencies of target vehicle_interface_node[0m
+[0.208s] [ 67%] Built target vehicle_interface
+[0.213s] [ 69%] [32mBuilding CXX object CMakeFiles/vehicle_interface_node.dir/src/main.cpp.o[0m
+[0.214s] [ 72%] [32mBuilding CXX object CMakeFiles/vehicle_interface_node.dir/src/Vehicle_Ctrl_Node.cpp.o[0m
+[0.252s] [ 74%] Built target vehicle_interface__py
+[0.294s] [ 81%] Built target vehicle_interface__rosidl_generator_py
+[0.335s] [ 90%] Built target vehicle_interface__rosidl_typesupport_fastrtps_c__pyext
+[0.335s] [ 90%] Built target vehicle_interface__rosidl_typesupport_c__pyext
+[0.336s] [ 95%] Built target vehicle_interface__rosidl_typesupport_introspection_c__pyext
+[0.628s] running egg_info
+[0.629s] writing vehicle_interface.egg-info/PKG-INFO
+[0.630s] writing dependency_links to vehicle_interface.egg-info/dependency_links.txt
+[0.630s] writing top-level names to vehicle_interface.egg-info/top_level.txt
+[0.636s] reading manifest file 'vehicle_interface.egg-info/SOURCES.txt'
+[0.637s] writing manifest file 'vehicle_interface.egg-info/SOURCES.txt'
+[0.713s] [ 95%] Built target ament_cmake_python_build_vehicle_interface_egg
+[16.712s] [ 97%] [32m[1mLinking CXX executable vehicle_interface_node[0m
+[17.510s] [100%] Built target vehicle_interface_node
+[17.537s] Invoked command in '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface -- -j6 -l6
+[17.560s] Invoking command in '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface
+[17.577s] -- Install configuration: ""
+[17.578s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/ament_index/resource_index/rosidl_interfaces/vehicle_interface
+[17.578s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface
+[17.578s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg
+[17.579s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail
+[17.579s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__type_support.h
+[17.579s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__functions.h
+[17.579s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__type_support.h
+[17.580s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__struct.h
+[17.580s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__functions.c
+[17.580s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__functions.h
+[17.580s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__struct.h
+[17.581s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__functions.c
+[17.581s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/vehicle_feedback.h
+[17.581s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/vehicle_command.h
+[17.581s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/rosidl_generator_c__visibility_control.h
+[17.582s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/environment/library_path.sh
+[17.582s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/environment/library_path.dsv
+[17.582s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_generator_c.so
+[17.583s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_generator_c.so" to ""
+[17.583s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface
+[17.584s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg
+[17.584s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[17.584s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail
+[17.584s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__rosidl_typesupport_fastrtps_c.h
+[17.584s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__rosidl_typesupport_fastrtps_c.h
+[17.584s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_fastrtps_c.so
+[17.585s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_fastrtps_c.so" to ""
+[17.585s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface
+[17.585s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg
+[17.586s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/vehicle_feedback.hpp
+[17.586s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/vehicle_command.hpp
+[17.586s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail
+[17.586s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__struct.hpp
+[17.586s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__builder.hpp
+[17.586s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__type_support.hpp
+[17.587s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__traits.hpp
+[17.587s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__traits.hpp
+[17.587s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__struct.hpp
+[17.587s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__builder.hpp
+[17.588s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__type_support.hpp
+[17.588s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[17.588s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface
+[17.588s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg
+[17.589s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[17.589s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail
+[17.589s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/dds_fastrtps
+[17.589s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__rosidl_typesupport_fastrtps_cpp.hpp
+[17.589s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__rosidl_typesupport_fastrtps_cpp.hpp
+[17.589s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_fastrtps_cpp.so
+[17.590s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_fastrtps_cpp.so" to ""
+[17.590s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface
+[17.590s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg
+[17.591s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[17.591s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail
+[17.591s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__rosidl_typesupport_introspection_c.h
+[17.591s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__type_support.c
+[17.591s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__rosidl_typesupport_introspection_c.h
+[17.592s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__type_support.c
+[17.592s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_introspection_c.so
+[17.593s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_introspection_c.so" to ""
+[17.593s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_c.so
+[17.593s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_c.so" to ""
+[17.593s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface
+[17.594s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg
+[17.594s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail
+[17.594s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__rosidl_typesupport_introspection_cpp.hpp
+[17.594s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__type_support.cpp
+[17.594s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__type_support.cpp
+[17.594s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__rosidl_typesupport_introspection_cpp.hpp
+[17.595s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_introspection_cpp.so
+[17.595s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_introspection_cpp.so" to ""
+[17.595s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_cpp.so
+[17.596s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_cpp.so" to ""
+[17.596s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/environment/pythonpath.sh
+[17.596s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/environment/pythonpath.dsv
+[17.597s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface-0.0.0-py3.10.egg-info
+[17.597s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface-0.0.0-py3.10.egg-info/SOURCES.txt
+[17.597s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface-0.0.0-py3.10.egg-info/dependency_links.txt
+[17.597s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface-0.0.0-py3.10.egg-info/top_level.txt
+[17.598s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface-0.0.0-py3.10.egg-info/PKG-INFO
+[17.598s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface
+[17.598s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/_vehicle_interface_s.ep.rosidl_typesupport_introspection_c.c
+[17.598s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/vehicle_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[17.598s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/vehicle_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[17.599s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/_vehicle_interface_s.ep.rosidl_typesupport_c.c
+[17.599s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/libvehicle_interface__rosidl_generator_py.so
+[17.599s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/__init__.py
+[17.599s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/vehicle_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[17.600s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg
+[17.600s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg/_vehicle_command_s.c
+[17.600s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg/_vehicle_command.py
+[17.600s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg/_vehicle_feedback.py
+[17.600s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg/__init__.py
+[17.601s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg/_vehicle_feedback_s.c
+[17.601s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/_vehicle_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[17.673s] Listing '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface'...
+[17.673s] Compiling '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/__init__.py'...
+[17.673s] Listing '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg'...
+[17.674s] Compiling '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg/__init__.py'...
+[17.674s] Compiling '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg/_vehicle_command.py'...
+[17.674s] Compiling '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg/_vehicle_feedback.py'...
+[17.684s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/vehicle_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[17.685s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/vehicle_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[17.685s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/vehicle_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[17.685s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/vehicle_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[17.686s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/vehicle_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[17.686s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/vehicle_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[17.686s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_generator_py.so
+[17.687s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_generator_py.so" to ""
+[17.687s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/msg/VehicleCommand.idl
+[17.688s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/msg/VehicleFeedback.idl
+[17.688s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/msg/VehicleCommand.msg
+[17.688s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/msg/VehicleFeedback.msg
+[17.689s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/vehicle_interface/vehicle_interface_node
+[17.698s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/vehicle_interface/vehicle_interface_node" to ""
+[17.698s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/ament_index/resource_index/package_run_dependencies/vehicle_interface
+[17.698s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/ament_index/resource_index/parent_prefix_path/vehicle_interface
+[17.699s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/environment/ament_prefix_path.sh
+[17.699s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/environment/ament_prefix_path.dsv
+[17.699s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/environment/path.sh
+[17.700s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/environment/path.dsv
+[17.700s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/local_setup.bash
+[17.700s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/local_setup.sh
+[17.700s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/local_setup.zsh
+[17.701s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/local_setup.dsv
+[17.701s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/package.dsv
+[17.701s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/ament_index/resource_index/packages/vehicle_interface
+[17.702s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/export_vehicle_interface__rosidl_generator_cExport.cmake
+[17.702s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/export_vehicle_interface__rosidl_generator_cExport-noconfig.cmake
+[17.702s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/export_vehicle_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[17.703s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/export_vehicle_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[17.703s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/export_vehicle_interface__rosidl_generator_cppExport.cmake
+[17.703s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/export_vehicle_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[17.703s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/export_vehicle_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[17.704s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interface__rosidl_typesupport_introspection_cExport.cmake
+[17.704s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[17.704s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interface__rosidl_typesupport_cExport.cmake
+[17.705s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interface__rosidl_typesupport_cExport-noconfig.cmake
+[17.705s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interface__rosidl_typesupport_introspection_cppExport.cmake
+[17.705s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[17.706s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interface__rosidl_typesupport_cppExport.cmake
+[17.706s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[17.706s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/export_vehicle_interface__rosidl_generator_pyExport.cmake
+[17.706s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/export_vehicle_interface__rosidl_generator_pyExport-noconfig.cmake
+[17.707s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/rosidl_cmake-extras.cmake
+[17.707s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[17.708s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[17.708s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/ament_cmake_export_targets-extras.cmake
+[17.708s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[17.708s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[17.709s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[17.709s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interfaceConfig.cmake
+[17.709s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interfaceConfig-version.cmake
+[17.710s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/package.xml
+[17.715s] Invoked command in '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface

@@ -1,0 +1,9 @@
+setup.py
+vehicle_interface/__init__.py
+vehicle_interface.egg-info/PKG-INFO
+vehicle_interface.egg-info/SOURCES.txt
+vehicle_interface.egg-info/dependency_links.txt
+vehicle_interface.egg-info/top_level.txt
+vehicle_interface/msg/__init__.py
+vehicle_interface/msg/_vehicle_command.py
+vehicle_interface/msg/_vehicle_feedback.py

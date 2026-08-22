@@ -1,0 +1,6 @@
+{
+  "package_name": "vehicle_controller",
+  "non_idl_tuples": [
+    "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_controller:msg/VehiclePose.msg"
+  ]
+}

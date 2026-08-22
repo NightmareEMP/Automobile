@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "vehicle_interface__py",
+		"source" : "build/vehicle_interface/vehicle_interface__py"
+	}
+}

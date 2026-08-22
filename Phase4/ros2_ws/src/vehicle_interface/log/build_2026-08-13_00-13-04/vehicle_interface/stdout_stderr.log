@@ -1,0 +1,47 @@
+[  2%] Built target vehicle_interface__cpp
+[ 11%] Built target vehicle_interface__rosidl_generator_c
+[ 11%] Built target ament_cmake_python_copy_vehicle_interface
+[ 30%] Built target vehicle_interface__rosidl_typesupport_introspection_cpp
+[ 30%] Built target vehicle_interface__rosidl_typesupport_cpp
+[ 39%] Built target vehicle_interface__rosidl_typesupport_fastrtps_cpp
+[ 48%] Built target vehicle_interface__rosidl_typesupport_introspection_c
+[ 58%] Built target vehicle_interface__rosidl_typesupport_fastrtps_c
+[ 67%] Built target vehicle_interface__rosidl_typesupport_c
+[ 72%] [32mBuilding CXX object CMakeFiles/vehicle_interface_node.dir/src/Vehicle_Ctrl_Node.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/vehicle_interface_node.dir/src/main.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/vehicle_interface_node.dir/src/Uart_drv.cpp.o[0m
+[ 74%] Built target vehicle_interface
+[ 76%] Built target vehicle_interface__py
+[ 81%] [32mBuilding C object CMakeFiles/vehicle_interface__rosidl_generator_py.dir/rosidl_generator_py/vehicle_interface/msg/_vehicle_command_s.c.o[0m
+[ 81%] [32mBuilding C object CMakeFiles/vehicle_interface__rosidl_generator_py.dir/rosidl_generator_py/vehicle_interface/msg/_vehicle_feedback_s.c.o[0m
+[ 83%] [32m[1mLinking C shared library rosidl_generator_py/vehicle_interface/libvehicle_interface__rosidl_generator_py.so[0m
+In file included from [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/main.cpp:1[m[K:
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:10:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/string.hpp: No such file or directory
+   10 | #include [01;31m[K"std_msgs/msg/string.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:1[m[K:
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:10:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/string.hpp: No such file or directory
+   10 | #include [01;31m[K"std_msgs/msg/string.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vehicle_interface_node.dir/build.make:90: CMakeFiles/vehicle_interface_node.dir/src/Vehicle_Ctrl_Node.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/vehicle_interface_node.dir/build.make:76: CMakeFiles/vehicle_interface_node.dir/src/main.cpp.o] Error 1
+[ 83%] Built target vehicle_interface__rosidl_generator_py
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/vehicle_interface_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 88%] [32mBuilding C object CMakeFiles/vehicle_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/vehicle_interface/_vehicle_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/vehicle_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/vehicle_interface/_vehicle_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+running egg_info
+writing vehicle_interface.egg-info/PKG-INFO
+writing dependency_links to vehicle_interface.egg-info/dependency_links.txt
+writing top-level names to vehicle_interface.egg-info/top_level.txt
+reading manifest file 'vehicle_interface.egg-info/SOURCES.txt'
+writing manifest file 'vehicle_interface.egg-info/SOURCES.txt'
+[ 88%] Built target ament_cmake_python_build_vehicle_interface_egg
+[ 90%] [32m[1mLinking C shared library rosidl_generator_py/vehicle_interface/vehicle_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[ 93%] [32m[1mLinking C shared library rosidl_generator_py/vehicle_interface/vehicle_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[ 93%] Built target vehicle_interface__rosidl_typesupport_introspection_c__pyext
+[ 93%] Built target vehicle_interface__rosidl_typesupport_fastrtps_c__pyext
+gmake: *** [Makefile:146: all] Error 2

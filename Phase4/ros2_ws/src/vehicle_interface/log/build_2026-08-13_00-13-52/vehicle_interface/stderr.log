@@ -1,0 +1,270 @@
+In file included from [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:1[m[K:
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:45:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_interface[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+   45 |     rclcpp::Publisher<[01;31m[Kvehicle_interface[m[K::msg::VehicleFeedback>::SharedPtr feedback_pub_;
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                       [32m[Krcl_interfaces[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:45:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   45 |     rclcpp::Publisher<vehicle_interface::msg::VehicleFeedback[01;31m[K>[m[K::SharedPtr feedback_pub_;
+      |                                                              [01;31m[K^[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:45:65:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   45 |     rclcpp::Publisher<vehicle_interface::msg::VehicleFeedback>::[01;31m[KSharedPtr[m[K feedback_pub_;
+      |                                                                 [01;31m[K^~~~~~~~~[m[K
+      |                                                                          [32m[K;[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:45:75:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeedback_pub_[m[K’ does not name a type
+   45 |     rclcpp::Publisher<vehicle_interface::msg::VehicleFeedback>::SharedPtr [01;31m[Kfeedback_pub_[m[K;
+      |                                                                           [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:46:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_interface[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+   46 |     rclcpp::Subscription<[01;31m[Kvehicle_interface[m[K::msg::VehicleCommand>::SharedPtr command_sub_;
+      |                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                          [32m[Krcl_interfaces[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:46:64:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   46 |     rclcpp::Subscription<vehicle_interface::msg::VehicleCommand[01;31m[K>[m[K::SharedPtr command_sub_;
+      |                                                                [01;31m[K^[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:46:64:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:46:64:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:46:64:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:46:67:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   46 |     rclcpp::Subscription<vehicle_interface::msg::VehicleCommand>::[01;31m[KSharedPtr[m[K command_sub_;
+      |                                                                   [01;31m[K^~~~~~~~~[m[K
+      |                                                                            [32m[K;[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:46:67:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint Car::SharedPtr[m[K’
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:45:65:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint Car::SharedPtr[m[K’
+   45 |     rclcpp::Publisher<vehicle_interface::msg::VehicleFeedback>::[01;36m[KSharedPtr[m[K feedback_pub_;
+      |                                                                 [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:46:77:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand_sub_[m[K’ does not name a type
+   46 |     rclcpp::Subscription<vehicle_interface::msg::VehicleCommand>::SharedPtr [01;31m[Kcommand_sub_[m[K;
+      |                                                                             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:47:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_interface[m[K’ does not name a type
+   47 |     void command_callback(const [01;31m[Kvehicle_interface[m[K::msg::VehicleCommand::SharedPtr msg);
+      |                                 [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:47:55:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   47 |     void command_callback(const vehicle_interface::msg[01;31m[K::[m[KVehicleCommand::SharedPtr msg);
+      |                                                       [01;31m[K^~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:47:55:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   47 |     void command_callback[34m[K([m[Kconst vehicle_interface::msg[01;31m[K:[m[K[32m[K:[m[KVehicleCommand::SharedPtr msg);
+      |                          [34m[K~[m[K                            [01;31m[K^[m[K[32m[K~[m[K
+      |                                                       [32m[K)[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:47:52:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   47 |     void command_callback(const vehicle_interface::[01;31m[Kmsg[m[K::VehicleCommand::SharedPtr msg);
+      |                                                    [01;31m[K^~~[m[K
+      |                                                       [32m[K;[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:47:57:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleCommand[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+   47 |     void command_callback(const vehicle_interface::msg::[01;31m[KVehicleCommand[m[K::SharedPtr msg);
+      |                                                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:[m[K In constructor ‘[01m[KCar::Car()[m[K’:
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:29:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand_sub_[m[K’ was not declared in this scope
+   29 |     [01;31m[Kcommand_sub_[m[K = this->create_subscription<vehicle_interface::msg::VehicleCommand>(
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/main.cpp:1[m[K:
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:45:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_interface[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+   45 |     rclcpp::Publisher<[01;31m[Kvehicle_interface[m[K::msg::VehicleFeedback>::SharedPtr feedback_pub_;
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                       [32m[Krcl_interfaces[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:45:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   45 |     rclcpp::Publisher<vehicle_interface::msg::VehicleFeedback[01;31m[K>[m[K::SharedPtr feedback_pub_;
+      |                                                              [01;31m[K^[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:45:65:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   45 |     rclcpp::Publisher<vehicle_interface::msg::VehicleFeedback>::[01;31m[KSharedPtr[m[K feedback_pub_;
+      |                                                                 [01;31m[K^~~~~~~~~[m[K
+      |                                                                          [32m[K;[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:45:75:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeedback_pub_[m[K’ does not name a type
+   45 |     rclcpp::Publisher<vehicle_interface::msg::VehicleFeedback>::SharedPtr [01;31m[Kfeedback_pub_[m[K;
+      |                                                                           [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:29:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_interface[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+   29 |     command_sub_ = this->create_subscription<[01;31m[Kvehicle_interface[m[K::msg::VehicleCommand>(
+      |                                              [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                              [32m[Krcl_interfaces[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:29:26:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   29 |     command_sub_ = this->[01;31m[Kcreate_subscription<vehicle_interface::msg::VehicleCommand>[m[K(
+      |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:46:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_interface[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+   46 |     rclcpp::Subscription<[01;31m[Kvehicle_interface[m[K::msg::VehicleCommand>::SharedPtr command_sub_;
+      |                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                          [32m[Krcl_interfaces[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:46:64:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   46 |     rclcpp::Subscription<vehicle_interface::msg::VehicleCommand[01;31m[K>[m[K::SharedPtr command_sub_;
+      |                                                                [01;31m[K^[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:46:64:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:46:64:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:46:64:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:46:67:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   46 |     rclcpp::Subscription<vehicle_interface::msg::VehicleCommand>::[01;31m[KSharedPtr[m[K command_sub_;
+      |                                                                   [01;31m[K^~~~~~~~~[m[K
+      |                                                                            [32m[K;[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:46:67:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint Car::SharedPtr[m[K’
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:45:65:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint Car::SharedPtr[m[K’
+   45 |     rclcpp::Publisher<vehicle_interface::msg::VehicleFeedback>::[01;36m[KSharedPtr[m[K feedback_pub_;
+      |                                                                 [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:29:85:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KCar::create_subscription<<expression error> >(const char [17], int, std::_Bind_helper<false, void (Car::*)(...), Car*, const std::_Placeholder<1>&>::type)[m[K’
+   29 |     command_sub_ = [01;31m[Kthis->create_subscription<vehicle_interface::msg::VehicleCommand>([m[K
+      |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   30 | [01;31m[K            "/vehicle_command",[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~[m[K                                                      
+   31 | [01;31m[K            10,[m[K
+      |             [01;31m[K~~~[m[K                                                                      
+   32 | [01;31m[K            std::bind([m[K
+      |             [01;31m[K~~~~~~~~~~[m[K                                                               
+   33 | [01;31m[K            &Car::command_callback,[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K                                                  
+   34 | [01;31m[K            this,[m[K
+      |             [01;31m[K~~~~~[m[K                                                                    
+   35 | [01;31m[K            std::placeholders::_1))[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K                                                  
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:9[m[K,
+                 from [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  219 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:29:85:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   29 |     command_sub_ = [01;31m[Kthis->create_subscription<vehicle_interface::msg::VehicleCommand>([m[K
+      |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   30 | [01;31m[K            "/vehicle_command",[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~[m[K                                                      
+   31 | [01;31m[K            10,[m[K
+      |             [01;31m[K~~~[m[K                                                                      
+   32 | [01;31m[K            std::bind([m[K
+      |             [01;31m[K~~~~~~~~~~[m[K                                                               
+   33 | [01;31m[K            &Car::command_callback,[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K                                                  
+   34 | [01;31m[K            this,[m[K
+      |             [01;31m[K~~~~~[m[K                                                                    
+   35 | [01;31m[K            std::placeholders::_1))[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K                                                  
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:46:77:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand_sub_[m[K’ does not name a type
+   46 |     rclcpp::Subscription<vehicle_interface::msg::VehicleCommand>::SharedPtr [01;31m[Kcommand_sub_[m[K;
+      |                                                                             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:47:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_interface[m[K’ does not name a type
+   47 |     void command_callback(const [01;31m[Kvehicle_interface[m[K::msg::VehicleCommand::SharedPtr msg);
+      |                                 [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:47:55:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   47 |     void command_callback(const vehicle_interface::msg[01;31m[K::[m[KVehicleCommand::SharedPtr msg);
+      |                                                       [01;31m[K^~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:47:55:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   47 |     void command_callback[34m[K([m[Kconst vehicle_interface::msg[01;31m[K:[m[K[32m[K:[m[KVehicleCommand::SharedPtr msg);
+      |                          [34m[K~[m[K                            [01;31m[K^[m[K[32m[K~[m[K
+      |                                                       [32m[K)[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:47:52:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   47 |     void command_callback(const vehicle_interface::[01;31m[Kmsg[m[K::VehicleCommand::SharedPtr msg);
+      |                                                    [01;31m[K^~~[m[K
+      |                                                       [32m[K;[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:47:57:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleCommand[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+   47 |     void command_callback(const vehicle_interface::msg::[01;31m[KVehicleCommand[m[K::SharedPtr msg);
+      |                                                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:37:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeedback_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kfeedback_mutex_[m[K’?
+   37 |     [01;31m[Kfeedback_pub_[m[K = this->create_publisher<vehicle_interface::msg::VehicleFeedback>(
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[Kfeedback_mutex_[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:37:27:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   37 |     feedback_pub_ = this->[01;31m[Kcreate_publisher<vehicle_interface::msg::VehicleFeedback>[m[K(
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:37:84:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KCar::create_publisher<vehicle_interface>(const char [18], int)[m[K’
+   37 |     feedback_pub_ = [01;31m[Kthis->create_publisher<vehicle_interface::msg::VehicleFeedback>([m[K
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   38 | [01;31m[K            "/vehicle_feedback",[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~[m[K                                                    
+   39 | [01;31m[K            10)[m[K;
+      |             [01;31m[K~~~[m[K                                                                     
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:9[m[K,
+                 from [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  195 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:[m[K At global scope:
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:48:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_interface[m[K’ does not name a type
+   48 | void Car::command_callback(const [01;31m[Kvehicle_interface[m[K::msg::VehicleCommand::SharedPtr msg){
+      |                                  [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:48:56:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   48 | void Car::command_callback(const vehicle_interface::msg[01;31m[K::[m[KVehicleCommand::SharedPtr msg){
+      |                                                        [01;31m[K^~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:48:56:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   48 | void Car::command_callback[34m[K([m[Kconst vehicle_interface::msg[01;31m[K:[m[K[32m[K:[m[KVehicleCommand::SharedPtr msg){
+      |                           [34m[K~[m[K                            [01;31m[K^[m[K[32m[K~[m[K
+      |                                                        [32m[K)[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:48:56:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+   48 | void Car::command_callback(const vehicle_interface::msg[01;31m[K::[m[KVehicleCommand::SharedPtr msg){
+      |                                                        [01;31m[K^~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:[m[K In member function ‘[01m[Kvoid Car::RxLoop()[m[K’:
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:263:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_interface[m[K’ has not been declared
+  263 |         [01;31m[Kvehicle_interface[m[K::msg::VehicleFeedback msg;
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:265:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+  265 |         [01;31m[Kmsg[m[K.telemetry_seq = feedback.telemetry_seq;
+      |         [01;31m[K^~~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:265:9:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:33[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:9[m[K,
+                 from [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:28:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+   28 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:9[m[K,
+                 from [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:28:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+   28 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:9[m[K,
+                 from [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:28:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+   28 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:7[m[K,
+                 from [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:10[m[K,
+                 from [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:28:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+   28 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:274:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeedback_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kfeedback_mutex_[m[K’?
+  274 |         [01;31m[Kfeedback_pub_[m[K->publish(msg);
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+      |         [32m[Kfeedback_mutex_[m[K
+gmake[2]: *** [CMakeFiles/vehicle_interface_node.dir/build.make:76: CMakeFiles/vehicle_interface_node.dir/src/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/vehicle_interface_node.dir/build.make:90: CMakeFiles/vehicle_interface_node.dir/src/Vehicle_Ctrl_Node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/vehicle_interface_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

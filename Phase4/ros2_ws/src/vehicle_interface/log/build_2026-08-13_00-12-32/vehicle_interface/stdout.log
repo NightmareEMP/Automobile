@@ -1,0 +1,29 @@
+[35m[1mConsolidate compiler generated dependencies of target vehicle_interface__rosidl_generator_c[0m
+[  2%] Built target vehicle_interface__cpp
+[ 11%] Built target vehicle_interface__rosidl_generator_c
+[35m[1mConsolidate compiler generated dependencies of target vehicle_interface__rosidl_typesupport_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target vehicle_interface__rosidl_typesupport_fastrtps_cpp[0m
+[ 11%] Built target ament_cmake_python_copy_vehicle_interface
+[35m[1mConsolidate compiler generated dependencies of target vehicle_interface__rosidl_typesupport_fastrtps_c[0m
+[35m[1mConsolidate compiler generated dependencies of target vehicle_interface__rosidl_typesupport_introspection_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target vehicle_interface__rosidl_typesupport_introspection_c[0m
+[35m[1mConsolidate compiler generated dependencies of target vehicle_interface__rosidl_typesupport_c[0m
+[ 20%] Built target vehicle_interface__rosidl_typesupport_cpp
+[ 30%] Built target vehicle_interface__rosidl_typesupport_fastrtps_c
+[ 39%] Built target vehicle_interface__rosidl_typesupport_c
+[ 48%] Built target vehicle_interface__rosidl_typesupport_fastrtps_cpp
+[ 58%] Built target vehicle_interface__rosidl_typesupport_introspection_cpp
+[ 67%] Built target vehicle_interface__rosidl_typesupport_introspection_c
+[ 72%] [32mBuilding CXX object CMakeFiles/vehicle_interface_node.dir/src/main.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/vehicle_interface_node.dir/src/Vehicle_Ctrl_Node.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/vehicle_interface_node.dir/src/Uart_drv.cpp.o[0m
+[ 74%] Built target vehicle_interface
+[ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+running egg_info
+writing vehicle_interface.egg-info/PKG-INFO
+writing dependency_links to vehicle_interface.egg-info/dependency_links.txt
+writing top-level names to vehicle_interface.egg-info/top_level.txt
+reading manifest file 'vehicle_interface.egg-info/SOURCES.txt'
+writing manifest file 'vehicle_interface.egg-info/SOURCES.txt'
+[ 76%] Built target ament_cmake_python_build_vehicle_interface_egg
+[ 76%] Built target vehicle_interface__py

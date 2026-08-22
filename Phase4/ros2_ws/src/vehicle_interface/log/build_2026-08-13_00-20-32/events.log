@@ -1,0 +1,370 @@
+[0.000000] (-) TimerEvent: {}
+[0.000851] (vehicle_interface) JobQueued: {'identifier': 'vehicle_interface', 'dependencies': OrderedDict()}
+[0.001117] (vehicle_interface) JobStarted: {'identifier': 'vehicle_interface'}
+[0.013004] (vehicle_interface) JobProgress: {'identifier': 'vehicle_interface', 'progress': 'cmake'}
+[0.014183] (vehicle_interface) JobProgress: {'identifier': 'vehicle_interface', 'progress': 'build'}
+[0.015336] (vehicle_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface', '--', '-j6', '-l6'], 'cwd': '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wowjw'), ('SSH_CLIENT', '192.168.0.161 52237 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/wowjw'), ('OLDPWD', '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.132.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ee1f2b87-3114-4804-aebf-cfe1543a264a.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\]\\[\\e[32m\\]\\u@\\h\\[\\e[m\\]:\\[\\e[34m\\]\\w\\[\\e[33m\\]$(parse_git_branch)\\[\\e[m\\]$ \\[\x1b]633;B\x07\\]'), ('VSCODE_GIT_ASKPASS_NODE', '/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wowjw'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/wowjw/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/wowjw/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/bin/remote-cli:/home/wowjw/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c1ac1f4f39.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface'), ('LC_ALL', 'en_US.UTF-8'), ('COPILOT_DEBUG_NONCE', '9fb98c99a0663c7f3298287e6ff935d5'), ('SSH_CONNECTION', '192.168.0.161 52237 192.168.0.133 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099445] (-) TimerEvent: {}
+[0.106517] (vehicle_interface) StdoutLine: {'line': b'[  4%] Built target vehicle_interface__cpp\n'}
+[0.107189] (vehicle_interface) StdoutLine: {'line': b'[ 11%] Built target vehicle_interface__rosidl_generator_c\n'}
+[0.125011] (vehicle_interface) StdoutLine: {'line': b'[ 11%] Built target ament_cmake_python_copy_vehicle_interface\n'}
+[0.144191] (vehicle_interface) StdoutLine: {'line': b'[ 20%] Built target vehicle_interface__rosidl_typesupport_introspection_c\n'}
+[0.145811] (vehicle_interface) StdoutLine: {'line': b'[ 30%] Built target vehicle_interface__rosidl_typesupport_cpp\n'}
+[0.147354] (vehicle_interface) StdoutLine: {'line': b'[ 48%] Built target vehicle_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[0.147700] (vehicle_interface) StdoutLine: {'line': b'[ 48%] Built target vehicle_interface__rosidl_typesupport_introspection_cpp\n'}
+[0.147941] (vehicle_interface) StdoutLine: {'line': b'[ 58%] Built target vehicle_interface__rosidl_typesupport_c\n'}
+[0.169066] (vehicle_interface) StdoutLine: {'line': b'[ 67%] Built target vehicle_interface__rosidl_typesupport_fastrtps_c\n'}
+[0.171909] (vehicle_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vehicle_interface_node\x1b[0m\n'}
+[0.199597] (-) TimerEvent: {}
+[0.209332] (vehicle_interface) StdoutLine: {'line': b'[ 67%] Built target vehicle_interface\n'}
+[0.213818] (vehicle_interface) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/vehicle_interface_node.dir/src/main.cpp.o\x1b[0m\n'}
+[0.214915] (vehicle_interface) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/vehicle_interface_node.dir/src/Vehicle_Ctrl_Node.cpp.o\x1b[0m\n'}
+[0.252864] (vehicle_interface) StdoutLine: {'line': b'[ 74%] Built target vehicle_interface__py\n'}
+[0.294723] (vehicle_interface) StdoutLine: {'line': b'[ 81%] Built target vehicle_interface__rosidl_generator_py\n'}
+[0.299753] (-) TimerEvent: {}
+[0.336220] (vehicle_interface) StdoutLine: {'line': b'[ 90%] Built target vehicle_interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.336689] (vehicle_interface) StdoutLine: {'line': b'[ 90%] Built target vehicle_interface__rosidl_typesupport_c__pyext\n'}
+[0.337174] (vehicle_interface) StdoutLine: {'line': b'[ 95%] Built target vehicle_interface__rosidl_typesupport_introspection_c__pyext\n'}
+[0.399908] (-) TimerEvent: {}
+[0.500532] (-) TimerEvent: {}
+[0.601134] (-) TimerEvent: {}
+[0.628929] (vehicle_interface) StdoutLine: {'line': b'running egg_info\n'}
+[0.630522] (vehicle_interface) StdoutLine: {'line': b'writing vehicle_interface.egg-info/PKG-INFO\n'}
+[0.631116] (vehicle_interface) StdoutLine: {'line': b'writing dependency_links to vehicle_interface.egg-info/dependency_links.txt\n'}
+[0.631567] (vehicle_interface) StdoutLine: {'line': b'writing top-level names to vehicle_interface.egg-info/top_level.txt\n'}
+[0.637035] (vehicle_interface) StdoutLine: {'line': b"reading manifest file 'vehicle_interface.egg-info/SOURCES.txt'\n"}
+[0.638283] (vehicle_interface) StdoutLine: {'line': b"writing manifest file 'vehicle_interface.egg-info/SOURCES.txt'\n"}
+[0.701309] (-) TimerEvent: {}
+[0.713610] (vehicle_interface) StdoutLine: {'line': b'[ 95%] Built target ament_cmake_python_build_vehicle_interface_egg\n'}
+[0.801488] (-) TimerEvent: {}
+[0.902171] (-) TimerEvent: {}
+[1.002906] (-) TimerEvent: {}
+[1.103620] (-) TimerEvent: {}
+[1.204364] (-) TimerEvent: {}
+[1.305069] (-) TimerEvent: {}
+[1.405772] (-) TimerEvent: {}
+[1.506490] (-) TimerEvent: {}
+[1.607179] (-) TimerEvent: {}
+[1.707886] (-) TimerEvent: {}
+[1.808627] (-) TimerEvent: {}
+[1.909322] (-) TimerEvent: {}
+[2.009989] (-) TimerEvent: {}
+[2.110701] (-) TimerEvent: {}
+[2.211399] (-) TimerEvent: {}
+[2.312102] (-) TimerEvent: {}
+[2.412779] (-) TimerEvent: {}
+[2.513454] (-) TimerEvent: {}
+[2.614127] (-) TimerEvent: {}
+[2.714819] (-) TimerEvent: {}
+[2.815507] (-) TimerEvent: {}
+[2.916209] (-) TimerEvent: {}
+[3.016890] (-) TimerEvent: {}
+[3.117575] (-) TimerEvent: {}
+[3.218271] (-) TimerEvent: {}
+[3.318944] (-) TimerEvent: {}
+[3.419641] (-) TimerEvent: {}
+[3.520376] (-) TimerEvent: {}
+[3.621082] (-) TimerEvent: {}
+[3.721787] (-) TimerEvent: {}
+[3.822517] (-) TimerEvent: {}
+[3.923233] (-) TimerEvent: {}
+[4.023955] (-) TimerEvent: {}
+[4.124699] (-) TimerEvent: {}
+[4.225419] (-) TimerEvent: {}
+[4.326153] (-) TimerEvent: {}
+[4.426882] (-) TimerEvent: {}
+[4.527616] (-) TimerEvent: {}
+[4.628342] (-) TimerEvent: {}
+[4.729038] (-) TimerEvent: {}
+[4.829734] (-) TimerEvent: {}
+[4.930432] (-) TimerEvent: {}
+[5.031135] (-) TimerEvent: {}
+[5.131844] (-) TimerEvent: {}
+[5.232577] (-) TimerEvent: {}
+[5.333256] (-) TimerEvent: {}
+[5.433942] (-) TimerEvent: {}
+[5.534648] (-) TimerEvent: {}
+[5.635355] (-) TimerEvent: {}
+[5.736065] (-) TimerEvent: {}
+[5.836791] (-) TimerEvent: {}
+[5.937496] (-) TimerEvent: {}
+[6.038206] (-) TimerEvent: {}
+[6.138982] (-) TimerEvent: {}
+[6.239788] (-) TimerEvent: {}
+[6.340666] (-) TimerEvent: {}
+[6.441514] (-) TimerEvent: {}
+[6.542345] (-) TimerEvent: {}
+[6.643166] (-) TimerEvent: {}
+[6.743973] (-) TimerEvent: {}
+[6.844814] (-) TimerEvent: {}
+[6.945645] (-) TimerEvent: {}
+[7.046454] (-) TimerEvent: {}
+[7.147270] (-) TimerEvent: {}
+[7.248129] (-) TimerEvent: {}
+[7.348941] (-) TimerEvent: {}
+[7.449735] (-) TimerEvent: {}
+[7.550550] (-) TimerEvent: {}
+[7.651370] (-) TimerEvent: {}
+[7.752207] (-) TimerEvent: {}
+[7.853024] (-) TimerEvent: {}
+[7.953843] (-) TimerEvent: {}
+[8.054657] (-) TimerEvent: {}
+[8.155463] (-) TimerEvent: {}
+[8.256250] (-) TimerEvent: {}
+[8.356993] (-) TimerEvent: {}
+[8.457830] (-) TimerEvent: {}
+[8.558672] (-) TimerEvent: {}
+[8.659530] (-) TimerEvent: {}
+[8.760376] (-) TimerEvent: {}
+[8.861187] (-) TimerEvent: {}
+[8.962014] (-) TimerEvent: {}
+[9.062804] (-) TimerEvent: {}
+[9.163595] (-) TimerEvent: {}
+[9.264437] (-) TimerEvent: {}
+[9.365261] (-) TimerEvent: {}
+[9.466084] (-) TimerEvent: {}
+[9.566877] (-) TimerEvent: {}
+[9.667674] (-) TimerEvent: {}
+[9.768511] (-) TimerEvent: {}
+[9.869334] (-) TimerEvent: {}
+[9.970148] (-) TimerEvent: {}
+[10.070952] (-) TimerEvent: {}
+[10.171732] (-) TimerEvent: {}
+[10.272609] (-) TimerEvent: {}
+[10.373457] (-) TimerEvent: {}
+[10.474294] (-) TimerEvent: {}
+[10.575152] (-) TimerEvent: {}
+[10.676003] (-) TimerEvent: {}
+[10.776832] (-) TimerEvent: {}
+[10.877642] (-) TimerEvent: {}
+[10.978460] (-) TimerEvent: {}
+[11.079275] (-) TimerEvent: {}
+[11.180114] (-) TimerEvent: {}
+[11.280915] (-) TimerEvent: {}
+[11.381702] (-) TimerEvent: {}
+[11.482420] (-) TimerEvent: {}
+[11.583238] (-) TimerEvent: {}
+[11.684013] (-) TimerEvent: {}
+[11.784827] (-) TimerEvent: {}
+[11.885587] (-) TimerEvent: {}
+[11.986360] (-) TimerEvent: {}
+[12.087167] (-) TimerEvent: {}
+[12.187945] (-) TimerEvent: {}
+[12.288741] (-) TimerEvent: {}
+[12.389514] (-) TimerEvent: {}
+[12.490178] (-) TimerEvent: {}
+[12.590807] (-) TimerEvent: {}
+[12.691436] (-) TimerEvent: {}
+[12.792068] (-) TimerEvent: {}
+[12.892722] (-) TimerEvent: {}
+[12.993358] (-) TimerEvent: {}
+[13.094006] (-) TimerEvent: {}
+[13.194651] (-) TimerEvent: {}
+[13.295326] (-) TimerEvent: {}
+[13.396077] (-) TimerEvent: {}
+[13.496903] (-) TimerEvent: {}
+[13.597692] (-) TimerEvent: {}
+[13.698459] (-) TimerEvent: {}
+[13.799258] (-) TimerEvent: {}
+[13.900030] (-) TimerEvent: {}
+[14.000814] (-) TimerEvent: {}
+[14.101591] (-) TimerEvent: {}
+[14.202362] (-) TimerEvent: {}
+[14.303167] (-) TimerEvent: {}
+[14.403901] (-) TimerEvent: {}
+[14.504715] (-) TimerEvent: {}
+[14.605497] (-) TimerEvent: {}
+[14.706283] (-) TimerEvent: {}
+[14.807036] (-) TimerEvent: {}
+[14.907795] (-) TimerEvent: {}
+[15.008596] (-) TimerEvent: {}
+[15.109376] (-) TimerEvent: {}
+[15.210138] (-) TimerEvent: {}
+[15.310906] (-) TimerEvent: {}
+[15.411681] (-) TimerEvent: {}
+[15.512496] (-) TimerEvent: {}
+[15.613156] (-) TimerEvent: {}
+[15.713813] (-) TimerEvent: {}
+[15.814464] (-) TimerEvent: {}
+[15.915113] (-) TimerEvent: {}
+[16.017635] (-) TimerEvent: {}
+[16.118289] (-) TimerEvent: {}
+[16.218947] (-) TimerEvent: {}
+[16.319615] (-) TimerEvent: {}
+[16.420316] (-) TimerEvent: {}
+[16.520981] (-) TimerEvent: {}
+[16.621660] (-) TimerEvent: {}
+[16.713362] (vehicle_interface) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable vehicle_interface_node\x1b[0m\n'}
+[16.721768] (-) TimerEvent: {}
+[16.822443] (-) TimerEvent: {}
+[16.923183] (-) TimerEvent: {}
+[17.023875] (-) TimerEvent: {}
+[17.124580] (-) TimerEvent: {}
+[17.225250] (-) TimerEvent: {}
+[17.325928] (-) TimerEvent: {}
+[17.426615] (-) TimerEvent: {}
+[17.511089] (vehicle_interface) StdoutLine: {'line': b'[100%] Built target vehicle_interface_node\n'}
+[17.526765] (-) TimerEvent: {}
+[17.538110] (vehicle_interface) CommandEnded: {'returncode': 0}
+[17.539768] (vehicle_interface) JobProgress: {'identifier': 'vehicle_interface', 'progress': 'install'}
+[17.558948] (vehicle_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface'], 'cwd': '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wowjw'), ('SSH_CLIENT', '192.168.0.161 52237 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/wowjw'), ('OLDPWD', '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.132.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ee1f2b87-3114-4804-aebf-cfe1543a264a.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\]\\[\\e[32m\\]\\u@\\h\\[\\e[m\\]:\\[\\e[34m\\]\\w\\[\\e[33m\\]$(parse_git_branch)\\[\\e[m\\]$ \\[\x1b]633;B\x07\\]'), ('VSCODE_GIT_ASKPASS_NODE', '/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wowjw'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/wowjw/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/wowjw/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/wowjw/.vscode-server/cli/servers/Stable-df53daabb18cd157bdb08c7f01c34df936cf12f4/server/bin/remote-cli:/home/wowjw/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c1ac1f4f39.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface'), ('LC_ALL', 'en_US.UTF-8'), ('COPILOT_DEBUG_NONCE', '9fb98c99a0663c7f3298287e6ff935d5'), ('SSH_CONNECTION', '192.168.0.161 52237 192.168.0.133 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[17.578321] (vehicle_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.578819] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/ament_index/resource_index/rosidl_interfaces/vehicle_interface\n'}
+[17.579317] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface\n'}
+[17.579629] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg\n'}
+[17.579860] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail\n'}
+[17.580078] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__type_support.h\n'}
+[17.580339] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__functions.h\n'}
+[17.580627] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__type_support.h\n'}
+[17.580872] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__struct.h\n'}
+[17.581087] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__functions.c\n'}
+[17.581333] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__functions.h\n'}
+[17.581579] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__struct.h\n'}
+[17.581820] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__functions.c\n'}
+[17.582070] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/vehicle_feedback.h\n'}
+[17.582307] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/vehicle_command.h\n'}
+[17.582537] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[17.582954] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/environment/library_path.sh\n'}
+[17.583270] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/environment/library_path.dsv\n'}
+[17.583690] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_generator_c.so\n'}
+[17.584411] (vehicle_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_generator_c.so" to ""\n'}
+[17.584613] (vehicle_interface) StdoutLine: {'line': b'-- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface\n'}
+[17.584823] (vehicle_interface) StdoutLine: {'line': b'-- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg\n'}
+[17.585006] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[17.585162] (vehicle_interface) StdoutLine: {'line': b'-- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail\n'}
+[17.585334] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__rosidl_typesupport_fastrtps_c.h\n'}
+[17.585506] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__rosidl_typesupport_fastrtps_c.h\n'}
+[17.585690] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_fastrtps_c.so\n'}
+[17.586327] (vehicle_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[17.586492] (vehicle_interface) StdoutLine: {'line': b'-- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface\n'}
+[17.586677] (vehicle_interface) StdoutLine: {'line': b'-- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg\n'}
+[17.586836] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/vehicle_feedback.hpp\n'}
+[17.586993] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/vehicle_command.hpp\n'}
+[17.587201] (vehicle_interface) StdoutLine: {'line': b'-- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail\n'}
+[17.587355] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__struct.hpp\n'}
+[17.587536] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__builder.hpp\n'}
+[17.587707] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__type_support.hpp\n'}
+[17.587897] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__traits.hpp\n'}
+[17.588185] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__traits.hpp\n'}
+[17.588450] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__struct.hpp\n'}
+[17.588686] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__builder.hpp\n'}
+[17.588890] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__type_support.hpp\n'}
+[17.589091] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[17.589338] (vehicle_interface) StdoutLine: {'line': b'-- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface\n'}
+[17.589549] (vehicle_interface) StdoutLine: {'line': b'-- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg\n'}
+[17.589703] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[17.589894] (vehicle_interface) StdoutLine: {'line': b'-- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail\n'}
+[17.590061] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/dds_fastrtps\n'}
+[17.590203] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.590370] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.590555] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[17.591227] (vehicle_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[17.591433] (vehicle_interface) StdoutLine: {'line': b'-- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface\n'}
+[17.591612] (vehicle_interface) StdoutLine: {'line': b'-- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg\n'}
+[17.591777] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[17.591922] (vehicle_interface) StdoutLine: {'line': b'-- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail\n'}
+[17.592081] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__rosidl_typesupport_introspection_c.h\n'}
+[17.592354] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__type_support.c\n'}
+[17.592690] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__rosidl_typesupport_introspection_c.h\n'}
+[17.592924] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__type_support.c\n'}
+[17.593248] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_introspection_c.so\n'}
+[17.593827] (vehicle_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_introspection_c.so" to ""\n'}
+[17.593993] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_c.so\n'}
+[17.594511] (vehicle_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_c.so" to ""\n'}
+[17.594673] (vehicle_interface) StdoutLine: {'line': b'-- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface\n'}
+[17.594860] (vehicle_interface) StdoutLine: {'line': b'-- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg\n'}
+[17.594999] (vehicle_interface) StdoutLine: {'line': b'-- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail\n'}
+[17.595155] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.595292] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__type_support.cpp\n'}
+[17.595443] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_feedback__type_support.cpp\n'}
+[17.595597] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/include/vehicle_interface/vehicle_interface/msg/detail/vehicle_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.595837] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_introspection_cpp.so\n'}
+[17.596442] (vehicle_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[17.596612] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_cpp.so\n'}
+[17.597123] (vehicle_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_typesupport_cpp.so" to ""\n'}
+[17.597295] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/environment/pythonpath.sh\n'}
+[17.597499] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/environment/pythonpath.dsv\n'}
+[17.597754] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface-0.0.0-py3.10.egg-info\n'}
+[17.598051] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[17.598299] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[17.598509] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[17.598718] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[17.598990] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface\n'}
+[17.599163] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/_vehicle_interface_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[17.599415] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/vehicle_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[17.599678] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/vehicle_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[17.599925] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/_vehicle_interface_s.ep.rosidl_typesupport_c.c\n'}
+[17.600200] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/libvehicle_interface__rosidl_generator_py.so\n'}
+[17.600451] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/__init__.py\n'}
+[17.600665] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/vehicle_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[17.600862] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg\n'}
+[17.601026] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg/_vehicle_command_s.c\n'}
+[17.601252] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg/_vehicle_command.py\n'}
+[17.601473] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg/_vehicle_feedback.py\n'}
+[17.601709] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg/__init__.py\n'}
+[17.601911] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg/_vehicle_feedback_s.c\n'}
+[17.602126] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/_vehicle_interface_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[17.626843] (-) TimerEvent: {}
+[17.673965] (vehicle_interface) StdoutLine: {'line': b"Listing '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface'...\n"}
+[17.674390] (vehicle_interface) StdoutLine: {'line': b"Compiling '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/__init__.py'...\n"}
+[17.674576] (vehicle_interface) StdoutLine: {'line': b"Listing '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg'...\n"}
+[17.674723] (vehicle_interface) StdoutLine: {'line': b"Compiling '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg/__init__.py'...\n"}
+[17.674860] (vehicle_interface) StdoutLine: {'line': b"Compiling '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg/_vehicle_command.py'...\n"}
+[17.674991] (vehicle_interface) StdoutLine: {'line': b"Compiling '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/msg/_vehicle_feedback.py'...\n"}
+[17.685242] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/vehicle_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[17.685774] (vehicle_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/vehicle_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[17.686112] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/vehicle_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[17.686619] (vehicle_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/vehicle_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[17.686937] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/vehicle_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[17.687436] (vehicle_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/local/lib/python3.10/dist-packages/vehicle_interface/vehicle_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[17.687644] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_generator_py.so\n'}
+[17.688359] (vehicle_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/libvehicle_interface__rosidl_generator_py.so" to ""\n'}
+[17.688612] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/msg/VehicleCommand.idl\n'}
+[17.688892] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/msg/VehicleFeedback.idl\n'}
+[17.689155] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/msg/VehicleCommand.msg\n'}
+[17.689412] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/msg/VehicleFeedback.msg\n'}
+[17.689795] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/vehicle_interface/vehicle_interface_node\n'}
+[17.698924] (vehicle_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/lib/vehicle_interface/vehicle_interface_node" to ""\n'}
+[17.699174] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/ament_index/resource_index/package_run_dependencies/vehicle_interface\n'}
+[17.699579] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/ament_index/resource_index/parent_prefix_path/vehicle_interface\n'}
+[17.699904] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/environment/ament_prefix_path.sh\n'}
+[17.700205] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/environment/ament_prefix_path.dsv\n'}
+[17.700484] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/environment/path.sh\n'}
+[17.700744] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/environment/path.dsv\n'}
+[17.701013] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/local_setup.bash\n'}
+[17.701277] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/local_setup.sh\n'}
+[17.701550] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/local_setup.zsh\n'}
+[17.701809] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/local_setup.dsv\n'}
+[17.702065] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/package.dsv\n'}
+[17.702493] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/ament_index/resource_index/packages/vehicle_interface\n'}
+[17.702892] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/export_vehicle_interface__rosidl_generator_cExport.cmake\n'}
+[17.703178] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/export_vehicle_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[17.703486] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/export_vehicle_interface__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[17.703773] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/export_vehicle_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[17.704080] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/export_vehicle_interface__rosidl_generator_cppExport.cmake\n'}
+[17.704401] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/export_vehicle_interface__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[17.704689] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/export_vehicle_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[17.704996] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[17.705282] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[17.705577] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interface__rosidl_typesupport_cExport.cmake\n'}
+[17.705875] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[17.706177] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[17.706464] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[17.706760] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interface__rosidl_typesupport_cppExport.cmake\n'}
+[17.707067] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[17.707362] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/export_vehicle_interface__rosidl_generator_pyExport.cmake\n'}
+[17.707654] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/export_vehicle_interface__rosidl_generator_pyExport-noconfig.cmake\n'}
+[17.707921] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/rosidl_cmake-extras.cmake\n'}
+[17.708525] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[17.708842] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[17.709144] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[17.709361] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[17.709630] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[17.709906] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[17.710308] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interfaceConfig.cmake\n'}
+[17.710576] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/cmake/vehicle_interfaceConfig-version.cmake\n'}
+[17.710776] (vehicle_interface) StdoutLine: {'line': b'-- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/install/vehicle_interface/share/vehicle_interface/package.xml\n'}
+[17.715548] (vehicle_interface) CommandEnded: {'returncode': 0}
+[17.726972] (-) TimerEvent: {}
+[17.775201] (vehicle_interface) JobEnded: {'identifier': 'vehicle_interface', 'rc': 0}
+[17.776940] (-) EventReactorShutdown: {}

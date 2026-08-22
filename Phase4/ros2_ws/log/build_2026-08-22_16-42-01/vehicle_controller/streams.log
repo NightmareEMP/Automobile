@@ -1,0 +1,192 @@
+[0.019s] Invoking command in '/home/wowjw/Project/Automobile/Phase4/ros2_ws/build/vehicle_controller': CMAKE_PREFIX_PATH=/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_interface:/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller:/home/wowjw/Project/Automobile/Phase4/install/vehicle_controller:/home/wowjw/Project/Automobile/Phase4/install/vehicle_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_interface/lib:/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib:/home/wowjw/Project/Automobile/Phase4/install/vehicle_controller/lib:/home/wowjw/Project/Automobile/Phase4/install/vehicle_interface/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 /usr/bin/cmake /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_controller -DCMAKE_INSTALL_PREFIX=/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller
+[0.117s] -- The C compiler identification is GNU 11.4.0
+[0.233s] -- The CXX compiler identification is GNU 11.4.0
+[0.254s] -- Detecting C compiler ABI info
+[0.400s] -- Detecting C compiler ABI info - done
+[0.424s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.425s] -- Detecting C compile features
+[0.426s] -- Detecting C compile features - done
+[0.437s] -- Detecting CXX compiler ABI info
+[0.595s] -- Detecting CXX compiler ABI info - done
+[0.620s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.621s] -- Detecting CXX compile features
+[0.623s] -- Detecting CXX compile features - done
+[0.632s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.949s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.159s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[1.247s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.254s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.268s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.288s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.314s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.384s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.388s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.525s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.580s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.650s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.664s] -- Looking for pthread.h
+[1.792s] -- Looking for pthread.h - found
+[1.793s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.930s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.934s] -- Found Threads: TRUE  
+[2.054s] -- Found vehicle_interface: 0.0.0 (/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_interface/share/vehicle_interface/cmake)
+[2.576s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.252s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.511s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.513s] [0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[3.513s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[3.514s]   rosidl_target_interfaces()
+[3.514s] Call Stack (most recent call first):
+[3.514s]   CMakeLists.txt:22 (rosidl_target_interfaces)
+[3.514s] 
+[3.515s] [0m
+[3.521s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.579s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.580s] -- Configured cppcheck include dirs: /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_controller/include
+[3.580s] -- Configured cppcheck exclude dirs and/or files: 
+[3.582s] -- Added test 'lint_cmake' to check CMake code style
+[3.584s] -- Added test 'uncrustify' to check C / C++ code style
+[3.585s] -- Configured uncrustify additional arguments: 
+[3.586s] -- Added test 'xmllint' to check XML markup files
+[3.592s] -- Configuring done
+[3.637s] -- Generating done
+[3.652s] -- Build files have been written to: /home/wowjw/Project/Automobile/Phase4/ros2_ws/build/vehicle_controller
+[3.679s] Invoked command in '/home/wowjw/Project/Automobile/Phase4/ros2_ws/build/vehicle_controller' returned '0': CMAKE_PREFIX_PATH=/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_interface:/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller:/home/wowjw/Project/Automobile/Phase4/install/vehicle_controller:/home/wowjw/Project/Automobile/Phase4/install/vehicle_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_interface/lib:/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib:/home/wowjw/Project/Automobile/Phase4/install/vehicle_controller/lib:/home/wowjw/Project/Automobile/Phase4/install/vehicle_interface/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 /usr/bin/cmake /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_controller -DCMAKE_INSTALL_PREFIX=/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller
+[3.684s] Invoking command in '/home/wowjw/Project/Automobile/Phase4/ros2_ws/build/vehicle_controller': CMAKE_PREFIX_PATH=/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_interface:/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller:/home/wowjw/Project/Automobile/Phase4/install/vehicle_controller:/home/wowjw/Project/Automobile/Phase4/install/vehicle_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_interface/lib:/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib:/home/wowjw/Project/Automobile/Phase4/install/vehicle_controller/lib:/home/wowjw/Project/Automobile/Phase4/install/vehicle_interface/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --build /home/wowjw/Project/Automobile/Phase4/ros2_ws/build/vehicle_controller -- -j6 -l6
+[3.759s] [  4%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.777s] [  8%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.230s] [ 12%] [32mBuilding C object CMakeFiles/vehicle_controller__rosidl_generator_c.dir/rosidl_generator_c/vehicle_controller/msg/detail/vehicle_pose__functions.c.o[0m
+[4.237s] [ 12%] Built target vehicle_controller__cpp
+[4.255s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.256s] [ 20%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.258s] [ 24%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.322s] [ 28%] [32m[1mLinking C shared library libvehicle_controller__rosidl_generator_c.so[0m
+[4.386s] [ 28%] Built target vehicle_controller__rosidl_generator_c
+[4.404s] [ 36%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.404s] [ 36%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.407s] [ 40%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.672s] [ 44%] [32mBuilding CXX object CMakeFiles/vehicle_controller__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vehicle_controller/msg/vehicle_pose__type_support.cpp.o[0m
+[4.722s] [ 52%] [32mBuilding CXX object CMakeFiles/vehicle_controller__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vehicle_controller/msg/detail/dds_fastrtps/vehicle_pose__type_support.cpp.o[0m
+[4.722s] [ 52%] [32mBuilding CXX object CMakeFiles/vehicle_controller__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vehicle_controller/msg/detail/vehicle_pose__type_support.cpp.o[0m
+[4.848s] [ 56%] [32mBuilding CXX object CMakeFiles/vehicle_controller__rosidl_typesupport_c.dir/rosidl_typesupport_c/vehicle_controller/msg/vehicle_pose__type_support.cpp.o[0m
+[4.901s] [ 60%] [32mBuilding CXX object CMakeFiles/vehicle_controller__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vehicle_controller/msg/detail/vehicle_pose__type_support_c.cpp.o[0m
+[4.919s] [ 64%] [32m[1mLinking CXX shared library libvehicle_controller__rosidl_typesupport_c.so[0m
+[4.922s] [ 68%] [32mBuilding C object CMakeFiles/vehicle_controller__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vehicle_controller/msg/detail/vehicle_pose__type_support.c.o[0m
+[4.999s] [ 68%] Built target vehicle_controller__rosidl_typesupport_c
+[5.007s] [ 72%] [32m[1mLinking C shared library libvehicle_controller__rosidl_typesupport_introspection_c.so[0m
+[5.066s] [ 72%] Built target vehicle_controller__rosidl_typesupport_introspection_c
+[5.220s] [ 76%] [32m[1mLinking CXX shared library libvehicle_controller__rosidl_typesupport_cpp.so[0m
+[5.289s] [ 76%] Built target vehicle_controller__rosidl_typesupport_cpp
+[5.457s] [ 80%] [32m[1mLinking CXX shared library libvehicle_controller__rosidl_typesupport_introspection_cpp.so[0m
+[5.497s] [ 84%] [32m[1mLinking CXX shared library libvehicle_controller__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.525s] [ 84%] Built target vehicle_controller__rosidl_typesupport_introspection_cpp
+[5.559s] [ 88%] [32m[1mLinking CXX shared library libvehicle_controller__rosidl_typesupport_fastrtps_c.so[0m
+[5.646s] [ 88%] Built target vehicle_controller__rosidl_typesupport_fastrtps_cpp
+[5.700s] [ 88%] Built target vehicle_controller__rosidl_typesupport_fastrtps_c
+[5.741s] [ 88%] Built target vehicle_controller
+[5.779s] [ 96%] [32mBuilding CXX object CMakeFiles/vehicle_controller_node.dir/src/Vehicle_Ctrl_Node.cpp.o[0m
+[5.779s] [ 96%] [32mBuilding CXX object CMakeFiles/vehicle_controller_node.dir/src/main.cpp.o[0m
+[28.076s] [100%] [32m[1mLinking CXX executable vehicle_controller_node[0m
+[29.116s] [100%] Built target vehicle_controller_node
+[29.142s] Invoked command in '/home/wowjw/Project/Automobile/Phase4/ros2_ws/build/vehicle_controller' returned '0': CMAKE_PREFIX_PATH=/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_interface:/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller:/home/wowjw/Project/Automobile/Phase4/install/vehicle_controller:/home/wowjw/Project/Automobile/Phase4/install/vehicle_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_interface/lib:/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib:/home/wowjw/Project/Automobile/Phase4/install/vehicle_controller/lib:/home/wowjw/Project/Automobile/Phase4/install/vehicle_interface/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --build /home/wowjw/Project/Automobile/Phase4/ros2_ws/build/vehicle_controller -- -j6 -l6
+[29.146s] Invoking command in '/home/wowjw/Project/Automobile/Phase4/ros2_ws/build/vehicle_controller': CMAKE_PREFIX_PATH=/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_interface:/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller:/home/wowjw/Project/Automobile/Phase4/install/vehicle_controller:/home/wowjw/Project/Automobile/Phase4/install/vehicle_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_interface/lib:/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib:/home/wowjw/Project/Automobile/Phase4/install/vehicle_controller/lib:/home/wowjw/Project/Automobile/Phase4/install/vehicle_interface/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --install /home/wowjw/Project/Automobile/Phase4/ros2_ws/build/vehicle_controller
+[29.163s] -- Install configuration: ""
+[29.163s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/ament_index/resource_index/rosidl_interfaces/vehicle_controller
+[29.163s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller
+[29.164s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg
+[29.164s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/vehicle_pose.h
+[29.164s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail
+[29.165s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail/vehicle_pose__functions.c
+[29.165s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail/vehicle_pose__struct.h
+[29.165s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail/vehicle_pose__functions.h
+[29.165s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail/vehicle_pose__type_support.h
+[29.166s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/rosidl_generator_c__visibility_control.h
+[29.166s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/environment/library_path.sh
+[29.166s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/environment/library_path.dsv
+[29.167s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib/libvehicle_controller__rosidl_generator_c.so
+[29.168s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib/libvehicle_controller__rosidl_generator_c.so" to ""
+[29.168s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller
+[29.168s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg
+[29.168s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[29.168s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail
+[29.169s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail/vehicle_pose__rosidl_typesupport_fastrtps_c.h
+[29.169s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib/libvehicle_controller__rosidl_typesupport_fastrtps_c.so
+[29.169s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib/libvehicle_controller__rosidl_typesupport_fastrtps_c.so" to ""
+[29.169s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller
+[29.170s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg
+[29.170s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail
+[29.170s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail/vehicle_pose__type_support.hpp
+[29.170s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail/vehicle_pose__struct.hpp
+[29.171s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail/vehicle_pose__traits.hpp
+[29.171s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail/vehicle_pose__builder.hpp
+[29.171s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/vehicle_pose.hpp
+[29.171s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/rosidl_generator_cpp__visibility_control.hpp
+[29.172s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller
+[29.172s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg
+[29.172s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[29.172s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail
+[29.172s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail/dds_fastrtps
+[29.173s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail/vehicle_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[29.173s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib/libvehicle_controller__rosidl_typesupport_fastrtps_cpp.so
+[29.173s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib/libvehicle_controller__rosidl_typesupport_fastrtps_cpp.so" to ""
+[29.173s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller
+[29.174s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg
+[29.174s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[29.174s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail
+[29.174s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail/vehicle_pose__rosidl_typesupport_introspection_c.h
+[29.174s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail/vehicle_pose__type_support.c
+[29.174s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib/libvehicle_controller__rosidl_typesupport_introspection_c.so
+[29.175s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib/libvehicle_controller__rosidl_typesupport_introspection_c.so" to ""
+[29.175s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib/libvehicle_controller__rosidl_typesupport_c.so
+[29.176s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib/libvehicle_controller__rosidl_typesupport_c.so" to ""
+[29.176s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller
+[29.176s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg
+[29.176s] -- Up-to-date: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail
+[29.176s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail/vehicle_pose__rosidl_typesupport_introspection_cpp.hpp
+[29.177s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/include/vehicle_controller/vehicle_controller/msg/detail/vehicle_pose__type_support.cpp
+[29.177s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib/libvehicle_controller__rosidl_typesupport_introspection_cpp.so
+[29.177s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib/libvehicle_controller__rosidl_typesupport_introspection_cpp.so" to ""
+[29.177s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib/libvehicle_controller__rosidl_typesupport_cpp.so
+[29.178s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib/libvehicle_controller__rosidl_typesupport_cpp.so" to ""
+[29.178s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/msg/VehiclePose.idl
+[29.178s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/msg/VehiclePose.msg
+[29.179s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib/vehicle_controller/vehicle_controller_node
+[29.195s] -- Set runtime path of "/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib/vehicle_controller/vehicle_controller_node" to ""
+[29.195s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/ament_index/resource_index/package_run_dependencies/vehicle_controller
+[29.195s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/ament_index/resource_index/parent_prefix_path/vehicle_controller
+[29.196s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/environment/ament_prefix_path.sh
+[29.196s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/environment/ament_prefix_path.dsv
+[29.196s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/environment/path.sh
+[29.197s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/environment/path.dsv
+[29.197s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/local_setup.bash
+[29.197s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/local_setup.sh
+[29.198s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/local_setup.zsh
+[29.198s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/local_setup.dsv
+[29.198s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/package.dsv
+[29.198s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/ament_index/resource_index/packages/vehicle_controller
+[29.199s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/export_vehicle_controller__rosidl_generator_cExport.cmake
+[29.199s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/export_vehicle_controller__rosidl_generator_cExport-noconfig.cmake
+[29.199s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/export_vehicle_controller__rosidl_typesupport_fastrtps_cExport.cmake
+[29.200s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/export_vehicle_controller__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[29.200s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/export_vehicle_controller__rosidl_generator_cppExport.cmake
+[29.200s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/export_vehicle_controller__rosidl_typesupport_fastrtps_cppExport.cmake
+[29.201s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/export_vehicle_controller__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[29.201s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/vehicle_controller__rosidl_typesupport_introspection_cExport.cmake
+[29.201s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/vehicle_controller__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[29.201s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/vehicle_controller__rosidl_typesupport_cExport.cmake
+[29.202s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/vehicle_controller__rosidl_typesupport_cExport-noconfig.cmake
+[29.202s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/vehicle_controller__rosidl_typesupport_introspection_cppExport.cmake
+[29.202s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/vehicle_controller__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[29.203s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/vehicle_controller__rosidl_typesupport_cppExport.cmake
+[29.203s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/vehicle_controller__rosidl_typesupport_cppExport-noconfig.cmake
+[29.203s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/rosidl_cmake-extras.cmake
+[29.203s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[29.204s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[29.204s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/ament_cmake_export_targets-extras.cmake
+[29.204s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[29.204s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[29.205s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[29.205s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/vehicle_controllerConfig.cmake
+[29.205s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/cmake/vehicle_controllerConfig-version.cmake
+[29.205s] -- Installing: /home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/share/vehicle_controller/package.xml
+[29.210s] Invoked command in '/home/wowjw/Project/Automobile/Phase4/ros2_ws/build/vehicle_controller' returned '0': CMAKE_PREFIX_PATH=/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_interface:/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller:/home/wowjw/Project/Automobile/Phase4/install/vehicle_controller:/home/wowjw/Project/Automobile/Phase4/install/vehicle_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_interface/lib:/home/wowjw/Project/Automobile/Phase4/ros2_ws/install/vehicle_controller/lib:/home/wowjw/Project/Automobile/Phase4/install/vehicle_controller/lib:/home/wowjw/Project/Automobile/Phase4/install/vehicle_interface/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --install /home/wowjw/Project/Automobile/Phase4/ros2_ws/build/vehicle_controller

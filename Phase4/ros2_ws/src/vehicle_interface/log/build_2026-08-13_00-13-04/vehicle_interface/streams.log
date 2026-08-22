@@ -1,0 +1,49 @@
+[0.016s] Invoking command in '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface -- -j6 -l6
+[0.107s] [  2%] Built target vehicle_interface__cpp
+[0.109s] [ 11%] Built target vehicle_interface__rosidl_generator_c
+[0.132s] [ 11%] Built target ament_cmake_python_copy_vehicle_interface
+[0.150s] [ 30%] Built target vehicle_interface__rosidl_typesupport_introspection_cpp
+[0.151s] [ 30%] Built target vehicle_interface__rosidl_typesupport_cpp
+[0.151s] [ 39%] Built target vehicle_interface__rosidl_typesupport_fastrtps_cpp
+[0.152s] [ 48%] Built target vehicle_interface__rosidl_typesupport_introspection_c
+[0.154s] [ 58%] Built target vehicle_interface__rosidl_typesupport_fastrtps_c
+[0.169s] [ 67%] Built target vehicle_interface__rosidl_typesupport_c
+[0.187s] [ 72%] [32mBuilding CXX object CMakeFiles/vehicle_interface_node.dir/src/Vehicle_Ctrl_Node.cpp.o[0m
+[0.187s] [ 72%] [32mBuilding CXX object CMakeFiles/vehicle_interface_node.dir/src/main.cpp.o[0m
+[0.193s] [ 74%] [32mBuilding CXX object CMakeFiles/vehicle_interface_node.dir/src/Uart_drv.cpp.o[0m
+[0.210s] [ 74%] Built target vehicle_interface
+[0.252s] [ 76%] Built target vehicle_interface__py
+[0.289s] [ 81%] [32mBuilding C object CMakeFiles/vehicle_interface__rosidl_generator_py.dir/rosidl_generator_py/vehicle_interface/msg/_vehicle_command_s.c.o[0m
+[0.289s] [ 81%] [32mBuilding C object CMakeFiles/vehicle_interface__rosidl_generator_py.dir/rosidl_generator_py/vehicle_interface/msg/_vehicle_feedback_s.c.o[0m
+[0.523s] [ 83%] [32m[1mLinking C shared library rosidl_generator_py/vehicle_interface/libvehicle_interface__rosidl_generator_py.so[0m
+[0.581s] In file included from [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/main.cpp:1[m[K:
+[0.581s] [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:10:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/string.hpp: No such file or directory
+[0.581s]    10 | #include [01;31m[K"std_msgs/msg/string.hpp"[m[K
+[0.581s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.581s] In file included from [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:1[m[K:
+[0.582s] [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:10:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/string.hpp: No such file or directory
+[0.582s]    10 | #include [01;31m[K"std_msgs/msg/string.hpp"[m[K
+[0.582s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.582s] compilation terminated.
+[0.582s] compilation terminated.
+[0.585s] gmake[2]: *** [CMakeFiles/vehicle_interface_node.dir/build.make:90: CMakeFiles/vehicle_interface_node.dir/src/Vehicle_Ctrl_Node.cpp.o] Error 1
+[0.585s] gmake[2]: *** Waiting for unfinished jobs....
+[0.585s] gmake[2]: *** [CMakeFiles/vehicle_interface_node.dir/build.make:76: CMakeFiles/vehicle_interface_node.dir/src/main.cpp.o] Error 1
+[0.595s] [ 83%] Built target vehicle_interface__rosidl_generator_py
+[0.598s] gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/vehicle_interface_node.dir/all] Error 2
+[0.599s] gmake[1]: *** Waiting for unfinished jobs....
+[0.631s] [ 88%] [32mBuilding C object CMakeFiles/vehicle_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/vehicle_interface/_vehicle_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[0.632s] [ 88%] [32mBuilding C object CMakeFiles/vehicle_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/vehicle_interface/_vehicle_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[0.655s] running egg_info
+[0.656s] writing vehicle_interface.egg-info/PKG-INFO
+[0.657s] writing dependency_links to vehicle_interface.egg-info/dependency_links.txt
+[0.657s] writing top-level names to vehicle_interface.egg-info/top_level.txt
+[0.662s] reading manifest file 'vehicle_interface.egg-info/SOURCES.txt'
+[0.663s] writing manifest file 'vehicle_interface.egg-info/SOURCES.txt'
+[0.731s] [ 88%] Built target ament_cmake_python_build_vehicle_interface_egg
+[0.805s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/vehicle_interface/vehicle_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[0.805s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/vehicle_interface/vehicle_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[0.870s] [ 93%] Built target vehicle_interface__rosidl_typesupport_introspection_c__pyext
+[0.870s] [ 93%] Built target vehicle_interface__rosidl_typesupport_fastrtps_c__pyext
+[0.873s] gmake: *** [Makefile:146: all] Error 2
+[0.879s] Invoked command in '/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/build/vehicle_interface -- -j6 -l6

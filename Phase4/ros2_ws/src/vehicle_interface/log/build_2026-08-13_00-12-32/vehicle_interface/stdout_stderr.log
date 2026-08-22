@@ -1,0 +1,49 @@
+[35m[1mConsolidate compiler generated dependencies of target vehicle_interface__rosidl_generator_c[0m
+[  2%] Built target vehicle_interface__cpp
+[ 11%] Built target vehicle_interface__rosidl_generator_c
+[35m[1mConsolidate compiler generated dependencies of target vehicle_interface__rosidl_typesupport_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target vehicle_interface__rosidl_typesupport_fastrtps_cpp[0m
+[ 11%] Built target ament_cmake_python_copy_vehicle_interface
+[35m[1mConsolidate compiler generated dependencies of target vehicle_interface__rosidl_typesupport_fastrtps_c[0m
+[35m[1mConsolidate compiler generated dependencies of target vehicle_interface__rosidl_typesupport_introspection_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target vehicle_interface__rosidl_typesupport_introspection_c[0m
+[35m[1mConsolidate compiler generated dependencies of target vehicle_interface__rosidl_typesupport_c[0m
+[ 20%] Built target vehicle_interface__rosidl_typesupport_cpp
+[ 30%] Built target vehicle_interface__rosidl_typesupport_fastrtps_c
+[ 39%] Built target vehicle_interface__rosidl_typesupport_c
+[ 48%] Built target vehicle_interface__rosidl_typesupport_fastrtps_cpp
+[ 58%] Built target vehicle_interface__rosidl_typesupport_introspection_cpp
+[ 67%] Built target vehicle_interface__rosidl_typesupport_introspection_c
+[ 72%] [32mBuilding CXX object CMakeFiles/vehicle_interface_node.dir/src/main.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/vehicle_interface_node.dir/src/Vehicle_Ctrl_Node.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/vehicle_interface_node.dir/src/Uart_drv.cpp.o[0m
+[ 74%] Built target vehicle_interface
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Vehicle_Ctrl_Node.cpp:1:10:[m[K [01;31m[Kfatal error: [m[KVehicle_Ctrl_Node.h: No such file or directory
+    1 | #include [01;31m[K"Vehicle_Ctrl_Node.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vehicle_interface_node.dir/build.make:90: CMakeFiles/vehicle_interface_node.dir/src/Vehicle_Ctrl_Node.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/Uart_drv.cpp:6:10:[m[K [01;31m[Kfatal error: [m[KUart_drv.hpp: No such file or directory
+    6 | #include [01;31m[K"Uart_drv.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vehicle_interface_node.dir/build.make:104: CMakeFiles/vehicle_interface_node.dir/src/Uart_drv.cpp.o] Error 1
+[ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+running egg_info
+writing vehicle_interface.egg-info/PKG-INFO
+writing dependency_links to vehicle_interface.egg-info/dependency_links.txt
+writing top-level names to vehicle_interface.egg-info/top_level.txt
+reading manifest file 'vehicle_interface.egg-info/SOURCES.txt'
+writing manifest file 'vehicle_interface.egg-info/SOURCES.txt'
+In file included from [01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/src/main.cpp:1[m[K:
+[01m[K/home/wowjw/Project/Automobile/Phase4/ros2_ws/src/vehicle_interface/include/vehicle_interface/Vehicle_Ctrl_Node.h:10:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/string.hpp: No such file or directory
+   10 | #include [01;31m[K"std_msgs/msg/string.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vehicle_interface_node.dir/build.make:76: CMakeFiles/vehicle_interface_node.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/vehicle_interface_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 76%] Built target ament_cmake_python_build_vehicle_interface_egg
+[ 76%] Built target vehicle_interface__py
+gmake: *** [Makefile:146: all] Error 2
