@@ -28,6 +28,7 @@ The messsage will be modify to real pose such as position, velocity, acceleratio
 
 
 # Step:
+Prerequisite : STM32 code is the same as [Phase 3](../Phase3/STM32/.)
 1. Open Terminal 1
 2. Under Terminal 1
 ```shell
@@ -37,8 +38,8 @@ source install/setup.bash
 colcon build --packages-up-to vehicle_controller
 ros2 run vehicle_controller  vehicle_controller_node
 ```
-3. Open Terminal 2
-4. Under Terminal 2
+1. Open Terminal 2
+2. Under Terminal 2
 ```shell
 cd ros2_ws
 source /opt/ros/humble/setup.bash
@@ -46,8 +47,8 @@ source install/setup.bash
 colcon build --packages-up-to vehicle_interface
 ros2 run vehicle_interface  vehicle_interface_node
 ```
-5. Open Terminal 3
-6. Under Terminal 3
+1. Open Terminal 3
+2. Under Terminal 3
 ```shell
 cd ros2_ws
 source /opt/ros/humble/setup.bash
